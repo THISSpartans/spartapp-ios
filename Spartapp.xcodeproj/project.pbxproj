@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C1E03633205627B400CAF9C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E03632205627B400CAF9C8 /* AppDelegate.swift */; };
+		C1E03635205627B400CAF9C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E03634205627B400CAF9C8 /* ViewController.swift */; };
+		C1E03638205627B400CAF9C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1E03636205627B400CAF9C8 /* Main.storyboard */; };
+		C1E0363A205627B400CAF9C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1E03639205627B400CAF9C8 /* Assets.xcassets */; };
+		C1E0363D205627B400CAF9C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1E0363B205627B400CAF9C8 /* LaunchScreen.storyboard */; };
+		C1E03648205627B400CAF9C8 /* SpartappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E03647205627B400CAF9C8 /* SpartappTests.swift */; };
+		C1E03653205627B400CAF9C8 /* SpartappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E03652205627B400CAF9C8 /* SpartappUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C1E03644205627B400CAF9C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1E03627205627B400CAF9C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1E0362E205627B400CAF9C8;
+			remoteInfo = Spartapp;
+		};
+		C1E0364F205627B400CAF9C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1E03627205627B400CAF9C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1E0362E205627B400CAF9C8;
+			remoteInfo = Spartapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C1E0362F205627B400CAF9C8 /* Spartapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spartapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1E03632205627B400CAF9C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C1E03634205627B400CAF9C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C1E03637205627B400CAF9C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C1E03639205627B400CAF9C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1E0363C205627B400CAF9C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C1E0363E205627B400CAF9C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1E03643205627B400CAF9C8 /* SpartappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpartappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1E03647205627B400CAF9C8 /* SpartappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpartappTests.swift; sourceTree = "<group>"; };
+		C1E03649205627B400CAF9C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1E0364E205627B400CAF9C8 /* SpartappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpartappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1E03652205627B400CAF9C8 /* SpartappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpartappUITests.swift; sourceTree = "<group>"; };
+		C1E03654205627B400CAF9C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C1E0362C205627B400CAF9C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1E03640205627B400CAF9C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1E0364B205627B400CAF9C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C1E03626205627B400CAF9C8 = {
+			isa = PBXGroup;
+			children = (
+				C1E03631205627B400CAF9C8 /* Spartapp */,
+				C1E03646205627B400CAF9C8 /* SpartappTests */,
+				C1E03651205627B400CAF9C8 /* SpartappUITests */,
+				C1E03630205627B400CAF9C8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C1E03630205627B400CAF9C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1E0362F205627B400CAF9C8 /* Spartapp.app */,
+				C1E03643205627B400CAF9C8 /* SpartappTests.xctest */,
+				C1E0364E205627B400CAF9C8 /* SpartappUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1E03631205627B400CAF9C8 /* Spartapp */ = {
+			isa = PBXGroup;
+			children = (
+				C1E03632205627B400CAF9C8 /* AppDelegate.swift */,
+				C1E03634205627B400CAF9C8 /* ViewController.swift */,
+				C1E03636205627B400CAF9C8 /* Main.storyboard */,
+				C1E03639205627B400CAF9C8 /* Assets.xcassets */,
+				C1E0363B205627B400CAF9C8 /* LaunchScreen.storyboard */,
+				C1E0363E205627B400CAF9C8 /* Info.plist */,
+			);
+			path = Spartapp;
+			sourceTree = "<group>";
+		};
+		C1E03646205627B400CAF9C8 /* SpartappTests */ = {
+			isa = PBXGroup;
+			children = (
+				C1E03647205627B400CAF9C8 /* SpartappTests.swift */,
+				C1E03649205627B400CAF9C8 /* Info.plist */,
+			);
+			path = SpartappTests;
+			sourceTree = "<group>";
+		};
+		C1E03651205627B400CAF9C8 /* SpartappUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C1E03652205627B400CAF9C8 /* SpartappUITests.swift */,
+				C1E03654205627B400CAF9C8 /* Info.plist */,
+			);
+			path = SpartappUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C1E0362E205627B400CAF9C8 /* Spartapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1E03657205627B400CAF9C8 /* Build configuration list for PBXNativeTarget "Spartapp" */;
+			buildPhases = (
+				C1E0362B205627B400CAF9C8 /* Sources */,
+				C1E0362C205627B400CAF9C8 /* Frameworks */,
+				C1E0362D205627B400CAF9C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spartapp;
+			productName = Spartapp;
+			productReference = C1E0362F205627B400CAF9C8 /* Spartapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C1E03642205627B400CAF9C8 /* SpartappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1E0365A205627B400CAF9C8 /* Build configuration list for PBXNativeTarget "SpartappTests" */;
+			buildPhases = (
+				C1E0363F205627B400CAF9C8 /* Sources */,
+				C1E03640205627B400CAF9C8 /* Frameworks */,
+				C1E03641205627B400CAF9C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1E03645205627B400CAF9C8 /* PBXTargetDependency */,
+			);
+			name = SpartappTests;
+			productName = SpartappTests;
+			productReference = C1E03643205627B400CAF9C8 /* SpartappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C1E0364D205627B400CAF9C8 /* SpartappUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1E0365D205627B400CAF9C8 /* Build configuration list for PBXNativeTarget "SpartappUITests" */;
+			buildPhases = (
+				C1E0364A205627B400CAF9C8 /* Sources */,
+				C1E0364B205627B400CAF9C8 /* Frameworks */,
+				C1E0364C205627B400CAF9C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1E03650205627B400CAF9C8 /* PBXTargetDependency */,
+			);
+			name = SpartappUITests;
+			productName = SpartappUITests;
+			productReference = C1E0364E205627B400CAF9C8 /* SpartappUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1E03627205627B400CAF9C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "童开文";
+				TargetAttributes = {
+					C1E0362E205627B400CAF9C8 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					C1E03642205627B400CAF9C8 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C1E0362E205627B400CAF9C8;
+					};
+					C1E0364D205627B400CAF9C8 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C1E0362E205627B400CAF9C8;
+					};
+				};
+			};
+			buildConfigurationList = C1E0362A205627B400CAF9C8 /* Build configuration list for PBXProject "Spartapp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C1E03626205627B400CAF9C8;
+			productRefGroup = C1E03630205627B400CAF9C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1E0362E205627B400CAF9C8 /* Spartapp */,
+				C1E03642205627B400CAF9C8 /* SpartappTests */,
+				C1E0364D205627B400CAF9C8 /* SpartappUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C1E0362D205627B400CAF9C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1E0363D205627B400CAF9C8 /* LaunchScreen.storyboard in Resources */,
+				C1E0363A205627B400CAF9C8 /* Assets.xcassets in Resources */,
+				C1E03638205627B400CAF9C8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1E03641205627B400CAF9C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1E0364C205627B400CAF9C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1E0362B205627B400CAF9C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1E03635205627B400CAF9C8 /* ViewController.swift in Sources */,
+				C1E03633205627B400CAF9C8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1E0363F205627B400CAF9C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1E03648205627B400CAF9C8 /* SpartappTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1E0364A205627B400CAF9C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1E03653205627B400CAF9C8 /* SpartappUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C1E03645205627B400CAF9C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1E0362E205627B400CAF9C8 /* Spartapp */;
+			targetProxy = C1E03644205627B400CAF9C8 /* PBXContainerItemProxy */;
+		};
+		C1E03650205627B400CAF9C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1E0362E205627B400CAF9C8 /* Spartapp */;
+			targetProxy = C1E0364F205627B400CAF9C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C1E03636205627B400CAF9C8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1E03637205627B400CAF9C8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C1E0363B205627B400CAF9C8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1E0363C205627B400CAF9C8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C1E03655205627B400CAF9C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C1E03656205627B400CAF9C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C1E03658205627B400CAF9C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8L6QTAEDU;
+				INFOPLIST_FILE = Spartapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevintong.Spartapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C1E03659205627B400CAF9C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8L6QTAEDU;
+				INFOPLIST_FILE = Spartapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevintong.Spartapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C1E0365B205627B400CAF9C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8L6QTAEDU;
+				INFOPLIST_FILE = SpartappTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevintong.SpartappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spartapp.app/Spartapp";
+			};
+			name = Debug;
+		};
+		C1E0365C205627B400CAF9C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8L6QTAEDU;
+				INFOPLIST_FILE = SpartappTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevintong.SpartappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spartapp.app/Spartapp";
+			};
+			name = Release;
+		};
+		C1E0365E205627B400CAF9C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8L6QTAEDU;
+				INFOPLIST_FILE = SpartappUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevintong.SpartappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Spartapp;
+			};
+			name = Debug;
+		};
+		C1E0365F205627B400CAF9C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8L6QTAEDU;
+				INFOPLIST_FILE = SpartappUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevintong.SpartappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Spartapp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1E0362A205627B400CAF9C8 /* Build configuration list for PBXProject "Spartapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1E03655205627B400CAF9C8 /* Debug */,
+				C1E03656205627B400CAF9C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1E03657205627B400CAF9C8 /* Build configuration list for PBXNativeTarget "Spartapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1E03658205627B400CAF9C8 /* Debug */,
+				C1E03659205627B400CAF9C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1E0365A205627B400CAF9C8 /* Build configuration list for PBXNativeTarget "SpartappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1E0365B205627B400CAF9C8 /* Debug */,
+				C1E0365C205627B400CAF9C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1E0365D205627B400CAF9C8 /* Build configuration list for PBXNativeTarget "SpartappUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1E0365E205627B400CAF9C8 /* Debug */,
+				C1E0365F205627B400CAF9C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C1E03627205627B400CAF9C8 /* Project object */;
+}
