@@ -1,0 +1,58 @@
+PODS:
+  - Alamofire (4.7.2)
+  - AVOSCloud (7.3.2)
+  - AVOSCloudCrashReporting (7.3.2):
+    - AVOSCloud (= 7.3.2)
+    - AVOSCloudCrashReporting/_ARC (= 7.3.2)
+    - AVOSCloudCrashReporting/_NOARC (= 7.3.2)
+  - AVOSCloudCrashReporting/_ARC (7.3.2):
+    - AVOSCloud (= 7.3.2)
+    - AVOSCloudCrashReporting/_NOARC (= 7.3.2)
+  - AVOSCloudCrashReporting/_NOARC (7.3.2):
+    - AVOSCloud (= 7.3.2)
+  - AVOSCloudIM (7.3.2):
+    - AVOSCloud (= 7.3.2)
+    - AVOSCloudIM/_ARC (= 7.3.2)
+    - AVOSCloudIM/_NOARC (= 7.3.2)
+  - AVOSCloudIM/_ARC (7.3.2):
+    - AVOSCloud (= 7.3.2)
+    - AVOSCloudIM/_NOARC (= 7.3.2)
+  - AVOSCloudIM/_NOARC (7.3.2):
+    - AVOSCloud (= 7.3.2)
+  - LeanCloud (11.0.1):
+    - LeanCloud/Storage (= 11.0.1)
+  - LeanCloud/Storage (11.0.1):
+    - Alamofire (~> 4.7)
+  - SwiftSoup (1.6.3)
+  - WechatOpenSDK (1.8.2)
+
+DEPENDENCIES:
+  - AVOSCloud
+  - AVOSCloudCrashReporting
+  - AVOSCloudIM
+  - LeanCloud (= 11.0.1)
+  - SwiftSoup
+  - WechatOpenSDK
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AVOSCloud
+    - AVOSCloudCrashReporting
+    - AVOSCloudIM
+    - LeanCloud
+    - SwiftSoup
+    - WechatOpenSDK
+
+SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  AVOSCloud: 8a18125408bac1fc73c19ceb897db4ec4e0e6044
+  AVOSCloudCrashReporting: 12f4677508eac413f6c80f53bc7172b4210de1a8
+  AVOSCloudIM: dc24560259042bb84dd318a31b71ca858fccb6fe
+  LeanCloud: f9776746a4cd62bdb441f2768017a91c9516d219
+  SwiftSoup: d65d5715e2781392a71f97b9144b4242b9bf671a
+  WechatOpenSDK: 676feec516a11173eafd1fe64b10d27babf28701
+
+PODFILE CHECKSUM: 162346eeed5b12965fe9976fa5f6ba604321de4c
+
+COCOAPODS: 1.5.3
