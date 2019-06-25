@@ -7,16 +7,75 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		153A0C58AE3DC0CCC60C3CB3 /* Pods_Spartapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B35F6392CB5F4BF3481D8786 /* Pods_Spartapp.framework */; };
+		C10B7995212571050063C175 /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10B7994212571050063C175 /* School.swift */; };
+		C1340F1F20580F8100B4C4E7 /* SF-UI-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1340F1220580F7E00B4C4E7 /* SF-UI-Display-Semibold.otf */; };
+		C1340F2120580F8100B4C4E7 /* SF-UI-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1340F1420580F7E00B4C4E7 /* SF-UI-Display-Regular.otf */; };
+		C1340F2320580F8100B4C4E7 /* SF-UI-Display-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1340F1620580F7F00B4C4E7 /* SF-UI-Display-Ultralight.otf */; };
+		C1340F2420580F8100B4C4E7 /* SF-UI-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1340F1720580F7F00B4C4E7 /* SF-UI-Display-Bold.otf */; };
+		C1340F2520580F8100B4C4E7 /* SF-UI-Display-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1340F1820580F7F00B4C4E7 /* SF-UI-Display-Black.otf */; };
+		C1340F2620580F8100B4C4E7 /* SF-UI-Display-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1340F1920580F7F00B4C4E7 /* SF-UI-Display-Heavy.otf */; };
+		C1340F2920580F8100B4C4E7 /* SF-UI-Display-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1340F1C20580F8000B4C4E7 /* SF-UI-Display-Thin.otf */; };
+		C1340F2A20580F8100B4C4E7 /* SF-UI-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1340F1D20580F8000B4C4E7 /* SF-UI-Display-Light.otf */; };
+		C1340F2B20580F8100B4C4E7 /* SF-UI-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1340F1E20580F8000B4C4E7 /* SF-UI-Display-Medium.otf */; };
+		C141C97E20A41A010066E2F0 /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = C141C97D20A41A010066E2F0 /* TextFieldEffects.swift */; };
+		C147A0672191193500C9669F /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C147A0662191193500C9669F /* Intents.intentdefinition */; };
+		C147A06F219119C600C9669F /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C147A06E219119C600C9669F /* IntentHandler.swift */; };
+		C147A077219119C600C9669F /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C147A076219119C600C9669F /* IntentsUI.framework */; };
+		C147A07A219119C600C9669F /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C147A079219119C600C9669F /* IntentViewController.swift */; };
+		C147A07D219119C600C9669F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C147A07B219119C600C9669F /* MainInterface.storyboard */; };
+		C147A081219119C600C9669F /* SpartappIntentUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C147A075219119C600C9669F /* SpartappIntentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C147A084219119C600C9669F /* SpartappIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C147A06C219119C600C9669F /* SpartappIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C147A08D21911A5800C9669F /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C147A0662191193500C9669F /* Intents.intentdefinition */; };
+		C147A08E21911A5900C9669F /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C147A0662191193500C9669F /* Intents.intentdefinition */; };
+		C147A09021911D0100C9669F /* ClassesOfTheDayIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C147A08F21911D0100C9669F /* ClassesOfTheDayIntentHandler.swift */; };
+		C15167BE20A54FBE0008ED24 /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15167BD20A54FBE0008ED24 /* JiroTextField.swift */; };
+		C1630E4621AC00E900B07622 /* ClassTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1630E4521AC00E900B07622 /* ClassTableViewCell.swift */; };
+		C1695AD321A4366700BDB03A /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1695AD221A4366700BDB03A /* DateCollectionViewCell.swift */; };
+		C1905C1F2147BF680006C17B /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1905C1E2147BF680006C17B /* ServicesViewController.swift */; };
+		C1905C212147C0550006C17B /* ServiceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1905C202147C0550006C17B /* ServiceTableViewCell.swift */; };
+		C1961E82206A811200059901 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1961E81206A811200059901 /* Course.swift */; };
+		C1A2269F224B59EF007E6CA5 /* SSVoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2269E224B59EF007E6CA5 /* SSVoteViewController.swift */; };
+		C1B3824021929A2D009C9604 /* SiriClassTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B3823F21929A2D009C9604 /* SiriClassTableViewCell.swift */; };
+		C1B382422192C386009C9604 /* TomorrowClassIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B382412192C386009C9604 /* TomorrowClassIntentHandler.swift */; };
+		C1B50E4F2067CC15001791A8 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B50E4E2067CC15001791A8 /* ScheduleViewController.swift */; };
+		C1B50E552067CC96001791A8 /* DayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B50E542067CC96001791A8 /* DayCollectionViewCell.swift */; };
+		C1B50E572067CD05001791A8 /* Holiday.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B50E562067CD05001791A8 /* Holiday.swift */; };
+		C1BB4ECD20CEA53B00548FFC /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BB4ECC20CEA53B00548FFC /* WalkthroughViewController.swift */; };
+		C1BB4ECF20CEA55300548FFC /* PageWTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BB4ECE20CEA55300548FFC /* PageWTViewController.swift */; };
+		C1BB4ED120CEA56400548FFC /* SchoolTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BB4ED020CEA56400548FFC /* SchoolTableViewCell.swift */; };
+		C1CFA6FF206A8BEF00187053 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CFA6FE206A8BEF00187053 /* LoginViewController.swift */; };
+		C1D15288206A81F900A9336A /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D15287206A81F900A9336A /* Schedule.swift */; };
+		C1D3BF2F21CB476200E933AA /* SendNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D3BF2E21CB476200E933AA /* SendNotificationViewController.swift */; };
 		C1E03633205627B400CAF9C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E03632205627B400CAF9C8 /* AppDelegate.swift */; };
-		C1E03635205627B400CAF9C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E03634205627B400CAF9C8 /* ViewController.swift */; };
 		C1E03638205627B400CAF9C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1E03636205627B400CAF9C8 /* Main.storyboard */; };
 		C1E0363A205627B400CAF9C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1E03639205627B400CAF9C8 /* Assets.xcassets */; };
 		C1E0363D205627B400CAF9C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1E0363B205627B400CAF9C8 /* LaunchScreen.storyboard */; };
 		C1E03648205627B400CAF9C8 /* SpartappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E03647205627B400CAF9C8 /* SpartappTests.swift */; };
 		C1E03653205627B400CAF9C8 /* SpartappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E03652205627B400CAF9C8 /* SpartappUITests.swift */; };
+		C1F9154D21AFF01200E4E4DE /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F9154C21AFF01200E4E4DE /* NewsTableViewCell.swift */; };
+		C1F9154F21AFF09500E4E4DE /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F9154E21AFF09500E4E4DE /* NewsViewController.swift */; };
+		C1F9155121AFF12B00E4E4DE /* NewsTableViewCellDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F9155021AFF12B00E4E4DE /* NewsTableViewCellDesign.swift */; };
+		C1FA828F21AE3AD0006DF469 /* WeekdayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FA828E21AE3AD0006DF469 /* WeekdayCollectionViewCell.swift */; };
+		C1FCB1BE2191259300C7EF92 /* Holiday.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B50E562067CD05001791A8 /* Holiday.swift */; };
+		C1FCB1BF2191259300C7EF92 /* Holiday.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B50E562067CD05001791A8 /* Holiday.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		C147A07F219119C600C9669F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1E03627205627B400CAF9C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C147A074219119C600C9669F;
+			remoteInfo = SpartappIntentUI;
+		};
+		C147A082219119C600C9669F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1E03627205627B400CAF9C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C147A06B219119C600C9669F;
+			remoteInfo = SpartappIntent;
+		};
 		C1E03644205627B400CAF9C8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C1E03627205627B400CAF9C8 /* Project object */;
@@ -33,27 +92,112 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C15FC60520707FAB0061A78D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C147A081219119C600C9669F /* SpartappIntentUI.appex in Embed App Extensions */,
+				C147A084219119C600C9669F /* SpartappIntent.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		C1E0362F205627B400CAF9C8 /* Spartapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spartapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42E6FB9114208E4D42054705 /* Pods-Spartapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spartapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Spartapp/Pods-Spartapp.release.xcconfig"; sourceTree = "<group>"; };
+		B25D13E3AEB4B35833AB0EE5 /* Pods-Spartapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spartapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Spartapp/Pods-Spartapp.debug.xcconfig"; sourceTree = "<group>"; };
+		B35F6392CB5F4BF3481D8786 /* Pods_Spartapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spartapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C10B7994212571050063C175 /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
+		C11B564020D0FCDE004FAADD /* ClassTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassTableViewCell.swift; sourceTree = "<group>"; };
+		C1310615218C428C00889423 /* Spartapp-BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Spartapp-BridgingHeader.h"; sourceTree = "<group>"; };
+		C1340F1220580F7E00B4C4E7 /* SF-UI-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Semibold.otf"; sourceTree = "<group>"; };
+		C1340F1420580F7E00B4C4E7 /* SF-UI-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Regular.otf"; sourceTree = "<group>"; };
+		C1340F1620580F7F00B4C4E7 /* SF-UI-Display-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Ultralight.otf"; sourceTree = "<group>"; };
+		C1340F1720580F7F00B4C4E7 /* SF-UI-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Bold.otf"; sourceTree = "<group>"; };
+		C1340F1820580F7F00B4C4E7 /* SF-UI-Display-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Black.otf"; sourceTree = "<group>"; };
+		C1340F1920580F7F00B4C4E7 /* SF-UI-Display-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Heavy.otf"; sourceTree = "<group>"; };
+		C1340F1C20580F8000B4C4E7 /* SF-UI-Display-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Thin.otf"; sourceTree = "<group>"; };
+		C1340F1D20580F8000B4C4E7 /* SF-UI-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Light.otf"; sourceTree = "<group>"; };
+		C1340F1E20580F8000B4C4E7 /* SF-UI-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Medium.otf"; sourceTree = "<group>"; };
+		C141C97D20A41A010066E2F0 /* TextFieldEffects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldEffects.swift; sourceTree = "<group>"; };
+		C147A0662191193500C9669F /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		C147A06C219119C600C9669F /* SpartappIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SpartappIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C147A06E219119C600C9669F /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IntentHandler.swift; path = SpartappIntent/IntentHandler.swift; sourceTree = SOURCE_ROOT; };
+		C147A070219119C600C9669F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = SpartappIntent/Info.plist; sourceTree = SOURCE_ROOT; };
+		C147A075219119C600C9669F /* SpartappIntentUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SpartappIntentUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C147A076219119C600C9669F /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		C147A079219119C600C9669F /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		C147A07C219119C600C9669F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		C147A07E219119C600C9669F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C147A08B21911A0C00C9669F /* SpartappIntent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpartappIntent.entitlements; sourceTree = "<group>"; };
+		C147A08C21911A1300C9669F /* SpartappIntentUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpartappIntentUI.entitlements; sourceTree = "<group>"; };
+		C147A08F21911D0100C9669F /* ClassesOfTheDayIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesOfTheDayIntentHandler.swift; sourceTree = "<group>"; };
+		C15167BD20A54FBE0008ED24 /* JiroTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiroTextField.swift; sourceTree = "<group>"; };
+		C15FC5F920707FAB0061A78D /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		C15FC5FC20707FAB0061A78D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		C15FC5FE20707FAB0061A78D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C15FC606207080420061A78D /* Spartapp Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Spartapp Widget.entitlements"; sourceTree = "<group>"; };
+		C1630E4521AC00E900B07622 /* ClassTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassTableViewCell.swift; sourceTree = "<group>"; };
+		C163D1FD2190795A00BA2649 /* Spartapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spartapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C163D2002190795A00BA2649 /* SpartappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpartappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C163D2012190795A00BA2649 /* SpartappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpartappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1695AD221A4366700BDB03A /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
+		C1905C1E2147BF680006C17B /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
+		C1905C202147C0550006C17B /* ServiceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceTableViewCell.swift; sourceTree = "<group>"; };
+		C1961E81206A811200059901 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		C1A2269E224B59EF007E6CA5 /* SSVoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSVoteViewController.swift; sourceTree = "<group>"; };
+		C1B3823F21929A2D009C9604 /* SiriClassTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriClassTableViewCell.swift; sourceTree = "<group>"; };
+		C1B382412192C386009C9604 /* TomorrowClassIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomorrowClassIntentHandler.swift; sourceTree = "<group>"; };
+		C1B50E4E2067CC15001791A8 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		C1B50E542067CC96001791A8 /* DayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCollectionViewCell.swift; sourceTree = "<group>"; };
+		C1B50E562067CD05001791A8 /* Holiday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Holiday.swift; sourceTree = "<group>"; };
+		C1BB4ECC20CEA53B00548FFC /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
+		C1BB4ECE20CEA55300548FFC /* PageWTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageWTViewController.swift; sourceTree = "<group>"; };
+		C1BB4ED020CEA56400548FFC /* SchoolTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolTableViewCell.swift; sourceTree = "<group>"; };
+		C1CFA6FE206A8BEF00187053 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C1D15287206A81F900A9336A /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		C1D3BF2E21CB476200E933AA /* SendNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendNotificationViewController.swift; sourceTree = "<group>"; };
 		C1E03632205627B400CAF9C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C1E03634205627B400CAF9C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C1E03637205627B400CAF9C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C1E03639205627B400CAF9C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1E0363C205627B400CAF9C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1E0363E205627B400CAF9C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C1E03643205627B400CAF9C8 /* SpartappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpartappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1E03647205627B400CAF9C8 /* SpartappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpartappTests.swift; sourceTree = "<group>"; };
 		C1E03649205627B400CAF9C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C1E0364E205627B400CAF9C8 /* SpartappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpartappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1E03652205627B400CAF9C8 /* SpartappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpartappUITests.swift; sourceTree = "<group>"; };
 		C1E03654205627B400CAF9C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1EC5599205E67A0002D4D14 /* Spartapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Spartapp.entitlements; sourceTree = "<group>"; };
+		C1F9154C21AFF01200E4E4DE /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		C1F9154E21AFF09500E4E4DE /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		C1F9155021AFF12B00E4E4DE /* NewsTableViewCellDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCellDesign.swift; sourceTree = "<group>"; };
+		C1FA828E21AE3AD0006DF469 /* WeekdayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C147A069219119C600C9669F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C147A072219119C600C9669F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C147A077219119C600C9669F /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C1E0362C205627B400CAF9C8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				153A0C58AE3DC0CCC60C3CB3 /* Pods_Spartapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,32 +218,134 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51B655117F2986947190DDA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B25D13E3AEB4B35833AB0EE5 /* Pods-Spartapp.debug.xcconfig */,
+				42E6FB9114208E4D42054705 /* Pods-Spartapp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B03FEA38BEAB488D0BC4B13B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B35F6392CB5F4BF3481D8786 /* Pods_Spartapp.framework */,
+				C147A076219119C600C9669F /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1340EFD20580F3B00B4C4E7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C1340F1820580F7F00B4C4E7 /* SF-UI-Display-Black.otf */,
+				C1340F1720580F7F00B4C4E7 /* SF-UI-Display-Bold.otf */,
+				C1340F1920580F7F00B4C4E7 /* SF-UI-Display-Heavy.otf */,
+				C1340F1D20580F8000B4C4E7 /* SF-UI-Display-Light.otf */,
+				C1340F1E20580F8000B4C4E7 /* SF-UI-Display-Medium.otf */,
+				C1340F1420580F7E00B4C4E7 /* SF-UI-Display-Regular.otf */,
+				C1340F1220580F7E00B4C4E7 /* SF-UI-Display-Semibold.otf */,
+				C1340F1C20580F8000B4C4E7 /* SF-UI-Display-Thin.otf */,
+				C1340F1620580F7F00B4C4E7 /* SF-UI-Display-Ultralight.otf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C1340F302058189200B4C4E7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C10B7994212571050063C175 /* School.swift */,
+				C147A0662191193500C9669F /* Intents.intentdefinition */,
+				C1D15287206A81F900A9336A /* Schedule.swift */,
+				C1961E81206A811200059901 /* Course.swift */,
+				C1FA828E21AE3AD0006DF469 /* WeekdayCollectionViewCell.swift */,
+				C1B50E562067CD05001791A8 /* Holiday.swift */,
+				C1F9155021AFF12B00E4E4DE /* NewsTableViewCellDesign.swift */,
+				C1F9154C21AFF01200E4E4DE /* NewsTableViewCell.swift */,
+				C1695AD221A4366700BDB03A /* DateCollectionViewCell.swift */,
+				C1630E4521AC00E900B07622 /* ClassTableViewCell.swift */,
+				C1905C202147C0550006C17B /* ServiceTableViewCell.swift */,
+				C1BB4ED020CEA56400548FFC /* SchoolTableViewCell.swift */,
+				C1B50E542067CC96001791A8 /* DayCollectionViewCell.swift */,
+				C15167BD20A54FBE0008ED24 /* JiroTextField.swift */,
+				C141C97D20A41A010066E2F0 /* TextFieldEffects.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C147A06D219119C600C9669F /* SpartappIntent */ = {
+			isa = PBXGroup;
+			children = (
+				C147A08B21911A0C00C9669F /* SpartappIntent.entitlements */,
+				C147A06E219119C600C9669F /* IntentHandler.swift */,
+				C147A08F21911D0100C9669F /* ClassesOfTheDayIntentHandler.swift */,
+				C1B382412192C386009C9604 /* TomorrowClassIntentHandler.swift */,
+				C147A070219119C600C9669F /* Info.plist */,
+			);
+			path = SpartappIntent;
+			sourceTree = "<group>";
+		};
+		C147A078219119C600C9669F /* SpartappIntentUI */ = {
+			isa = PBXGroup;
+			children = (
+				C147A08C21911A1300C9669F /* SpartappIntentUI.entitlements */,
+				C147A079219119C600C9669F /* IntentViewController.swift */,
+				C147A07B219119C600C9669F /* MainInterface.storyboard */,
+				C1B3823F21929A2D009C9604 /* SiriClassTableViewCell.swift */,
+				C147A07E219119C600C9669F /* Info.plist */,
+			);
+			path = SpartappIntentUI;
+			sourceTree = "<group>";
+		};
+		C15FC5F820707FAB0061A78D /* Spartapp Widget */ = {
+			isa = PBXGroup;
+			children = (
+				C15FC606207080420061A78D /* Spartapp Widget.entitlements */,
+				C15FC5F920707FAB0061A78D /* TodayViewController.swift */,
+				C15FC5FB20707FAB0061A78D /* MainInterface.storyboard */,
+				C11B564020D0FCDE004FAADD /* ClassTableViewCell.swift */,
+				C15FC5FE20707FAB0061A78D /* Info.plist */,
+			);
+			path = "Spartapp Widget";
+			sourceTree = "<group>";
+		};
 		C1E03626205627B400CAF9C8 = {
 			isa = PBXGroup;
 			children = (
 				C1E03631205627B400CAF9C8 /* Spartapp */,
 				C1E03646205627B400CAF9C8 /* SpartappTests */,
 				C1E03651205627B400CAF9C8 /* SpartappUITests */,
-				C1E03630205627B400CAF9C8 /* Products */,
+				C15FC5F820707FAB0061A78D /* Spartapp Widget */,
+				51B655117F2986947190DDA4 /* Pods */,
+				C147A06D219119C600C9669F /* SpartappIntent */,
+				C147A078219119C600C9669F /* SpartappIntentUI */,
+				B03FEA38BEAB488D0BC4B13B /* Frameworks */,
+				C163D1FD2190795A00BA2649 /* Spartapp.app */,
+				C163D2002190795A00BA2649 /* SpartappTests.xctest */,
+				C163D2012190795A00BA2649 /* SpartappUITests.xctest */,
+				C147A06C219119C600C9669F /* SpartappIntent.appex */,
+				C147A075219119C600C9669F /* SpartappIntentUI.appex */,
 			);
-			sourceTree = "<group>";
-		};
-		C1E03630205627B400CAF9C8 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C1E0362F205627B400CAF9C8 /* Spartapp.app */,
-				C1E03643205627B400CAF9C8 /* SpartappTests.xctest */,
-				C1E0364E205627B400CAF9C8 /* SpartappUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		C1E03631205627B400CAF9C8 /* Spartapp */ = {
 			isa = PBXGroup;
 			children = (
+				C1EC5599205E67A0002D4D14 /* Spartapp.entitlements */,
+				C1340EFD20580F3B00B4C4E7 /* Resources */,
 				C1E03632205627B400CAF9C8 /* AppDelegate.swift */,
-				C1E03634205627B400CAF9C8 /* ViewController.swift */,
 				C1E03636205627B400CAF9C8 /* Main.storyboard */,
+				C1A2269E224B59EF007E6CA5 /* SSVoteViewController.swift */,
+				C1D3BF2E21CB476200E933AA /* SendNotificationViewController.swift */,
+				C1F9154E21AFF09500E4E4DE /* NewsViewController.swift */,
+				C1310615218C428C00889423 /* Spartapp-BridgingHeader.h */,
+				C1BB4ECE20CEA55300548FFC /* PageWTViewController.swift */,
+				C1BB4ECC20CEA53B00548FFC /* WalkthroughViewController.swift */,
+				C1B50E4E2067CC15001791A8 /* ScheduleViewController.swift */,
+				C1CFA6FE206A8BEF00187053 /* LoginViewController.swift */,
+				C1905C1E2147BF680006C17B /* ServicesViewController.swift */,
+				C1340F302058189200B4C4E7 /* Supporting Files */,
 				C1E03639205627B400CAF9C8 /* Assets.xcassets */,
 				C1E0363B205627B400CAF9C8 /* LaunchScreen.storyboard */,
 				C1E0363E205627B400CAF9C8 /* Info.plist */,
@@ -128,21 +374,60 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C1E0362E205627B400CAF9C8 /* Spartapp */ = {
+		C147A06B219119C600C9669F /* SpartappIntent */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C1E03657205627B400CAF9C8 /* Build configuration list for PBXNativeTarget "Spartapp" */;
+			buildConfigurationList = C147A088219119C600C9669F /* Build configuration list for PBXNativeTarget "SpartappIntent" */;
 			buildPhases = (
-				C1E0362B205627B400CAF9C8 /* Sources */,
-				C1E0362C205627B400CAF9C8 /* Frameworks */,
-				C1E0362D205627B400CAF9C8 /* Resources */,
+				C147A068219119C600C9669F /* Sources */,
+				C147A069219119C600C9669F /* Frameworks */,
+				C147A06A219119C600C9669F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = SpartappIntent;
+			productName = SpartappIntent;
+			productReference = C147A06C219119C600C9669F /* SpartappIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C147A074219119C600C9669F /* SpartappIntentUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C147A085219119C600C9669F /* Build configuration list for PBXNativeTarget "SpartappIntentUI" */;
+			buildPhases = (
+				C147A071219119C600C9669F /* Sources */,
+				C147A072219119C600C9669F /* Frameworks */,
+				C147A073219119C600C9669F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpartappIntentUI;
+			productName = SpartappIntentUI;
+			productReference = C147A075219119C600C9669F /* SpartappIntentUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		C1E0362E205627B400CAF9C8 /* Spartapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1E03657205627B400CAF9C8 /* Build configuration list for PBXNativeTarget "Spartapp" */;
+			buildPhases = (
+				E6F4E791188ACD672B34271C /* [CP] Check Pods Manifest.lock */,
+				C1E0362B205627B400CAF9C8 /* Sources */,
+				C1E0362C205627B400CAF9C8 /* Frameworks */,
+				C1E0362D205627B400CAF9C8 /* Resources */,
+				637D0F9909CCAD2B7B6D3529 /* [CP] Embed Pods Frameworks */,
+				C15FC60520707FAB0061A78D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C147A080219119C600C9669F /* PBXTargetDependency */,
+				C147A083219119C600C9669F /* PBXTargetDependency */,
+			);
 			name = Spartapp;
 			productName = Spartapp;
-			productReference = C1E0362F205627B400CAF9C8 /* Spartapp.app */;
+			productReference = C163D1FD2190795A00BA2649 /* Spartapp.app */;
 			productType = "com.apple.product-type.application";
 		};
 		C1E03642205627B400CAF9C8 /* SpartappTests */ = {
@@ -160,7 +445,7 @@
 			);
 			name = SpartappTests;
 			productName = SpartappTests;
-			productReference = C1E03643205627B400CAF9C8 /* SpartappTests.xctest */;
+			productReference = C163D2002190795A00BA2649 /* SpartappTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		C1E0364D205627B400CAF9C8 /* SpartappUITests */ = {
@@ -178,7 +463,7 @@
 			);
 			name = SpartappUITests;
 			productName = SpartappUITests;
-			productReference = C1E0364E205627B400CAF9C8 /* SpartappUITests.xctest */;
+			productReference = C163D2012190795A00BA2649 /* SpartappUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -187,13 +472,45 @@
 		C1E03627205627B400CAF9C8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
+				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = "童开文";
+				ORGANIZATIONNAME = "Kevin Tong";
 				TargetAttributes = {
+					C147A06B219119C600C9669F = {
+						CreatedOnToolsVersion = 10.0;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					C147A074219119C600C9669F = {
+						CreatedOnToolsVersion = 10.0;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					C1E0362E205627B400CAF9C8 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
 					};
 					C1E03642205627B400CAF9C8 = {
 						CreatedOnToolsVersion = 9.2;
@@ -216,25 +533,51 @@
 				Base,
 			);
 			mainGroup = C1E03626205627B400CAF9C8;
-			productRefGroup = C1E03630205627B400CAF9C8 /* Products */;
+			productRefGroup = C1E03626205627B400CAF9C8;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				C1E0362E205627B400CAF9C8 /* Spartapp */,
 				C1E03642205627B400CAF9C8 /* SpartappTests */,
 				C1E0364D205627B400CAF9C8 /* SpartappUITests */,
+				C147A06B219119C600C9669F /* SpartappIntent */,
+				C147A074219119C600C9669F /* SpartappIntentUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C147A06A219119C600C9669F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C147A073219119C600C9669F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C147A07D219119C600C9669F /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C1E0362D205627B400CAF9C8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1340F1F20580F8100B4C4E7 /* SF-UI-Display-Semibold.otf in Resources */,
+				C1340F2320580F8100B4C4E7 /* SF-UI-Display-Ultralight.otf in Resources */,
 				C1E0363D205627B400CAF9C8 /* LaunchScreen.storyboard in Resources */,
+				C1340F2920580F8100B4C4E7 /* SF-UI-Display-Thin.otf in Resources */,
+				C1340F2420580F8100B4C4E7 /* SF-UI-Display-Bold.otf in Resources */,
+				C1340F2120580F8100B4C4E7 /* SF-UI-Display-Regular.otf in Resources */,
+				C1340F2A20580F8100B4C4E7 /* SF-UI-Display-Light.otf in Resources */,
 				C1E0363A205627B400CAF9C8 /* Assets.xcassets in Resources */,
+				C1340F2B20580F8100B4C4E7 /* SF-UI-Display-Medium.otf in Resources */,
 				C1E03638205627B400CAF9C8 /* Main.storyboard in Resources */,
+				C1340F2520580F8100B4C4E7 /* SF-UI-Display-Black.otf in Resources */,
+				C1340F2620580F8100B4C4E7 /* SF-UI-Display-Heavy.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +597,107 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		637D0F9909CCAD2B7B6D3529 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Spartapp/Pods-Spartapp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AVOSCloud/AVOSCloud.framework",
+				"${BUILT_PRODUCTS_DIR}/AVOSCloudCrashReporting/AVOSCloudCrashReporting.framework",
+				"${BUILT_PRODUCTS_DIR}/AVOSCloudIM/AVOSCloudIM.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/LeanCloud/LeanCloud.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AVOSCloud.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AVOSCloudCrashReporting.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AVOSCloudIM.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LeanCloud.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Spartapp/Pods-Spartapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6F4E791188ACD672B34271C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Spartapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		C147A068219119C600C9669F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C147A08D21911A5800C9669F /* Intents.intentdefinition in Sources */,
+				C147A09021911D0100C9669F /* ClassesOfTheDayIntentHandler.swift in Sources */,
+				C1FCB1BE2191259300C7EF92 /* Holiday.swift in Sources */,
+				C1B382422192C386009C9604 /* TomorrowClassIntentHandler.swift in Sources */,
+				C147A06F219119C600C9669F /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C147A071219119C600C9669F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1FCB1BF2191259300C7EF92 /* Holiday.swift in Sources */,
+				C147A08E21911A5900C9669F /* Intents.intentdefinition in Sources */,
+				C147A07A219119C600C9669F /* IntentViewController.swift in Sources */,
+				C1B3824021929A2D009C9604 /* SiriClassTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C1E0362B205627B400CAF9C8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1E03635205627B400CAF9C8 /* ViewController.swift in Sources */,
+				C1BB4ECF20CEA55300548FFC /* PageWTViewController.swift in Sources */,
+				C1630E4621AC00E900B07622 /* ClassTableViewCell.swift in Sources */,
+				C1905C212147C0550006C17B /* ServiceTableViewCell.swift in Sources */,
+				C1F9154D21AFF01200E4E4DE /* NewsTableViewCell.swift in Sources */,
+				C1961E82206A811200059901 /* Course.swift in Sources */,
+				C1695AD321A4366700BDB03A /* DateCollectionViewCell.swift in Sources */,
+				C1B50E552067CC96001791A8 /* DayCollectionViewCell.swift in Sources */,
+				C1D3BF2F21CB476200E933AA /* SendNotificationViewController.swift in Sources */,
+				C1A2269F224B59EF007E6CA5 /* SSVoteViewController.swift in Sources */,
+				C1FA828F21AE3AD0006DF469 /* WeekdayCollectionViewCell.swift in Sources */,
 				C1E03633205627B400CAF9C8 /* AppDelegate.swift in Sources */,
+				C1D15288206A81F900A9336A /* Schedule.swift in Sources */,
+				C1F9155121AFF12B00E4E4DE /* NewsTableViewCellDesign.swift in Sources */,
+				C147A0672191193500C9669F /* Intents.intentdefinition in Sources */,
+				C1BB4ECD20CEA53B00548FFC /* WalkthroughViewController.swift in Sources */,
+				C1B50E4F2067CC15001791A8 /* ScheduleViewController.swift in Sources */,
+				C1B50E572067CD05001791A8 /* Holiday.swift in Sources */,
+				C1BB4ED120CEA56400548FFC /* SchoolTableViewCell.swift in Sources */,
+				C1F9154F21AFF09500E4E4DE /* NewsViewController.swift in Sources */,
+				C15167BE20A54FBE0008ED24 /* JiroTextField.swift in Sources */,
+				C141C97E20A41A010066E2F0 /* TextFieldEffects.swift in Sources */,
+				C1905C1F2147BF680006C17B /* ServicesViewController.swift in Sources */,
+				C10B7995212571050063C175 /* School.swift in Sources */,
+				C1CFA6FF206A8BEF00187053 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +720,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		C147A080219119C600C9669F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C147A074219119C600C9669F /* SpartappIntentUI */;
+			targetProxy = C147A07F219119C600C9669F /* PBXContainerItemProxy */;
+		};
+		C147A083219119C600C9669F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C147A06B219119C600C9669F /* SpartappIntent */;
+			targetProxy = C147A082219119C600C9669F /* PBXContainerItemProxy */;
+		};
 		C1E03645205627B400CAF9C8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C1E0362E205627B400CAF9C8 /* Spartapp */;
@@ -296,6 +743,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		C147A07B219119C600C9669F /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C147A07C219119C600C9669F /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		C15FC5FB20707FAB0061A78D /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C15FC5FC20707FAB0061A78D /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		C1E03636205627B400CAF9C8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -315,6 +778,96 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C147A086219119C600C9669F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_ENTITLEMENTS = SpartappIntentUI/SpartappIntentUI.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8L6QTAEDU;
+				INFOPLIST_FILE = SpartappIntentUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevintong.Spartapp.SpartappIntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C147A087219119C600C9669F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_ENTITLEMENTS = SpartappIntentUI/SpartappIntentUI.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8L6QTAEDU;
+				INFOPLIST_FILE = SpartappIntentUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevintong.Spartapp.SpartappIntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C147A089219119C600C9669F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_ENTITLEMENTS = SpartappIntent/SpartappIntent.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8L6QTAEDU;
+				INFOPLIST_FILE = SpartappIntent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevintong.Spartapp.SpartappIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C147A08A219119C600C9669F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_ENTITLEMENTS = SpartappIntent/SpartappIntent.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G8L6QTAEDU;
+				INFOPLIST_FILE = SpartappIntent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevintong.Spartapp.SpartappIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		C1E03655205627B400CAF9C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -344,11 +897,12 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kevin Tong (87HG2VCFF6)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -363,7 +917,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -401,11 +955,12 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kevin Tong (87HG2VCFF6)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -414,7 +969,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -424,31 +979,51 @@
 		};
 		C1E03658205627B400CAF9C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B25D13E3AEB4B35833AB0EE5 /* Pods-Spartapp.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Spartapp/Spartapp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G8L6QTAEDU;
+				DEVELOPMENT_TEAM = Q627YG3TKY;
 				INFOPLIST_FILE = Spartapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Spartapp/WeChatSDK1.8.3",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevintong.Spartapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/andrew-li/Documents/iOS Development/Spartapp/Spartapp/Spartapp-BridgingHeader.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		C1E03659205627B400CAF9C8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42E6FB9114208E4D42054705 /* Pods-Spartapp.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Spartapp/Spartapp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G8L6QTAEDU;
+				DEVELOPMENT_TEAM = Q627YG3TKY;
 				INFOPLIST_FILE = Spartapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Spartapp/WeChatSDK1.8.3",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevintong.Spartapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/andrew-li/Documents/iOS Development/Spartapp/Spartapp/Spartapp-BridgingHeader.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -521,6 +1096,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C147A085219119C600C9669F /* Build configuration list for PBXNativeTarget "SpartappIntentUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C147A086219119C600C9669F /* Debug */,
+				C147A087219119C600C9669F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C147A088219119C600C9669F /* Build configuration list for PBXNativeTarget "SpartappIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C147A089219119C600C9669F /* Debug */,
+				C147A08A219119C600C9669F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C1E0362A205627B400CAF9C8 /* Build configuration list for PBXProject "Spartapp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

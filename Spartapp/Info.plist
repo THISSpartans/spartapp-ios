@@ -4,10 +4,12 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>Spartapp</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<string>com.kevintong.Spartapp</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -15,11 +17,61 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>3.1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSUserActivityTypes</key>
+	<array>
+		<string>ClassesIntent</string>
+		<string>ClassesOfTheDayIntent</string>
+		<string>TomorrowClassIntent</string>
+	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>SF-UI-Text-Bold.otf</string>
+		<string>SF-UI-Text-BoldItalic.otf</string>
+		<string>SF-UI-Text-Heavy.otf</string>
+		<string>SF-UI-Text-HeavyItalic.otf</string>
+		<string>SF-UI-Text-Light.otf</string>
+		<string>SF-UI-Text-LightItalic.otf</string>
+		<string>SF-UI-Text-Medium.otf</string>
+		<string>SF-UI-Text-MediumItalic.otf</string>
+		<string>SF-UI-Text-Regular.otf</string>
+		<string>SF-UI-Text-RegularItalic.otf</string>
+		<string>SF-UI-Text-Ultrathin.otf</string>
+		<string>SF-UI-Text-UltrathinItalic.otf</string>
+		<string>SF-UI-Display-Black.otf</string>
+		<string>SF-UI-Display-Bold.otf</string>
+		<string>SF-UI-Display-Heavy.otf</string>
+		<string>SF-UI-Display-Light.otf</string>
+		<string>SF-UI-Display-Medium.otf</string>
+		<string>SF-UI-Display-Regular.otf</string>
+		<string>SF-UI-Display-Semibold.otf</string>
+		<string>SF-UI-Display-Thin.otf</string>
+		<string>SF-UI-Display-Ultralight.otf</string>
+	</array>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>updateSchedule</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Update Schedule</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).updateSchedule</string>
+		</dict>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -31,8 +83,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
