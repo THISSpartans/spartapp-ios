@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Bold.otf">
+            <string>SFUIDisplay-Bold</string>
+        </array>
+        <array key="SF-UI-Display-Light.otf">
+            <string>SFUIDisplay-Light</string>
+        </array>
+        <array key="SF-UI-Display-Medium.otf">
+            <string>SFUIDisplay-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Intent View Controller-->
+        <scene sceneID="7MM-of-jgj">
+            <objects>
+                <viewController id="ObA-dk-sSI" customClass="IntentViewController" customModule="SpartappIntentUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwx-i9-O7g">
+                                <rect key="frame" x="16" y="17" width="288" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Blz-ge-bI1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Bold" family="SF UI Display" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qAG-lP-tOb">
+                                <rect key="frame" x="16" y="43" width="288" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="V7a-As-DbB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Bold" family="SF UI Display" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="L9H-Tu-5Ym">
+                                <rect key="frame" x="16" y="63" width="288" height="217"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="Ykn-oh-1EQ" customClass="SiriClassTableViewCell" customModule="SpartappIntentUI" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="288" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ykn-oh-1EQ" id="3dH-Ra-1p3">
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2G0-gj-MRL">
+                                                    <rect key="frame" x="11" y="23" width="205" height="21"/>
+                                                    <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAg-7I-RJU">
+                                                    <rect key="frame" x="11" y="11" width="205" height="10"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="10" id="Kg5-oS-myz"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="12"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="2G0-gj-MRL" secondAttribute="bottom" constant="5.5" id="6Jm-8l-Ixx"/>
+                                                <constraint firstItem="2G0-gj-MRL" firstAttribute="top" secondItem="iAg-7I-RJU" secondAttribute="bottom" constant="2" id="8YJ-IN-UhB"/>
+                                                <constraint firstItem="2G0-gj-MRL" firstAttribute="leading" secondItem="3dH-Ra-1p3" secondAttribute="leading" constant="11" id="VnH-n7-nvX"/>
+                                                <constraint firstAttribute="trailing" secondItem="2G0-gj-MRL" secondAttribute="trailing" constant="72" id="g5Z-sk-hWv"/>
+                                                <constraint firstItem="iAg-7I-RJU" firstAttribute="top" secondItem="3dH-Ra-1p3" secondAttribute="top" constant="11" id="wiN-e8-VBv"/>
+                                                <constraint firstItem="iAg-7I-RJU" firstAttribute="leading" secondItem="3dH-Ra-1p3" secondAttribute="leading" constant="11" id="xhk-B4-1uq"/>
+                                                <constraint firstAttribute="trailing" secondItem="iAg-7I-RJU" secondAttribute="trailing" constant="72" id="xpe-Qo-D6g"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="classNameLabel" destination="2G0-gj-MRL" id="s66-F2-Qqx"/>
+                                            <outlet property="periodLabel" destination="iAg-7I-RJU" id="RNF-09-yfT"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qAG-lP-tOb" firstAttribute="top" secondItem="fwx-i9-O7g" secondAttribute="bottom" constant="5" id="5Hl-ZK-uHf"/>
+                            <constraint firstItem="4PN-XC-lEE" firstAttribute="bottom" secondItem="L9H-Tu-5Ym" secondAttribute="bottom" constant="20" id="Q2i-b3-t23"/>
+                            <constraint firstItem="4PN-XC-lEE" firstAttribute="trailing" secondItem="qAG-lP-tOb" secondAttribute="trailing" constant="16" id="QOm-eV-2Gm"/>
+                            <constraint firstItem="L9H-Tu-5Ym" firstAttribute="leading" secondItem="4PN-XC-lEE" secondAttribute="leading" constant="16" id="RGS-9h-c1K"/>
+                            <constraint firstItem="fwx-i9-O7g" firstAttribute="leading" secondItem="4PN-XC-lEE" secondAttribute="leading" constant="16" id="Wzg-Mp-2Ml"/>
+                            <constraint firstItem="qAG-lP-tOb" firstAttribute="leading" secondItem="4PN-XC-lEE" secondAttribute="leading" constant="16" id="bky-qr-NnI"/>
+                            <constraint firstItem="L9H-Tu-5Ym" firstAttribute="top" secondItem="qAG-lP-tOb" secondAttribute="bottom" constant="8" id="f6u-To-U0D"/>
+                            <constraint firstItem="fwx-i9-O7g" firstAttribute="top" secondItem="4PN-XC-lEE" secondAttribute="top" constant="17" id="lvt-db-MMP"/>
+                            <constraint firstItem="4PN-XC-lEE" firstAttribute="trailing" secondItem="L9H-Tu-5Ym" secondAttribute="trailing" constant="16" id="n8n-S6-zGg"/>
+                            <constraint firstItem="4PN-XC-lEE" firstAttribute="trailing" secondItem="fwx-i9-O7g" secondAttribute="trailing" constant="16" id="rGM-XE-BcW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4PN-XC-lEE"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="300"/>
+                    <connections>
+                        <outlet property="classesTableView" destination="L9H-Tu-5Ym" id="hkr-TL-hW2"/>
+                        <outlet property="dateLabel" destination="qAG-lP-tOb" id="8p9-yM-bcW"/>
+                        <outlet property="weekdayLabel" destination="fwx-i9-O7g" id="GIh-nx-h5O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.59999999999999" y="133.13343328335833"/>
+        </scene>
+    </scenes>
+</document>
