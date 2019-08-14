@@ -79,7 +79,7 @@ class ServicesViewController: UIViewController,UITableViewDelegate,UITableViewDa
                 if let decodedVotingStatus = defaults.object(forKey: "Vote") as? Data{
                     // has voted
                     
-                    let alertController = UIAlertController(title: "Sorry", message: "You have already  voted", preferredStyle: .alert)
+                    let alertController = UIAlertController(title: "Sorry", message: "You have already voted", preferredStyle: .alert)
                     alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
                     self.present(alertController, animated: true, completion: {
                         
@@ -89,7 +89,7 @@ class ServicesViewController: UIViewController,UITableViewDelegate,UITableViewDa
                     performSegue(withIdentifier: "toVote", sender: self)
                 }
                 
-            }else{
+            } else {
                 
                 let alertController = UIAlertController(title: "Sorry", message: "Voting takes place between 11:00-15:00 on March 29th, 2019 (Beijing Time)", preferredStyle: .alert)
                 alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))

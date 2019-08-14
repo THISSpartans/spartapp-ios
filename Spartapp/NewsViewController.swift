@@ -5,23 +5,37 @@
 //  Created by 童开文 on 2018/11/29.
 //  Copyright © 2018 童开文. All rights reserved.
 //
+//  Updated by Andrew Li on 2019/08/13 for news with webview
 
 import UIKit
 import LeanCloud
 
 class News {
     var title: String
+    var author: String
     var body: String
     var day: Int
     var weekday: String
     var hasShadow: Bool
+    var hasLink: Bool
+    var webLink: String
+    //var webLink: String
     
-    init (title: String, body: String, day: Int, weekday: String, hasShadow: Bool){
+    init (title: String, author: String, body: String, day: Int, weekday: String, hasShadow: Bool, hasLink: Bool, webLink: String){
         self.title = title
+        self.author = author
         self.body = body
         self.day = day
         self.weekday = weekday
         self.hasShadow = hasShadow
+        self.hasLink = hasLink
+        self.webLink = webLink
+        
+        //if no link enter ""
+    }
+    
+    func getAuthor() -> String {
+        return self.author
     }
 }
 
@@ -129,12 +143,12 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
         
         // get current date
         
-        
         let limitingDate = (Int(date[6...9])!*10000) + (Int(date[0...1])!*100) + (Int(date[3...4])!)
         
-        print(limitingDate)
+        print("Limiting date is", limitingDate)
         
-        let query = LCQuery(className: "News")
+        let query = LCQuery(className: "News_Complex")
+        
         query.whereKey("date", .greaterThanOrEqualTo(limitingDate))
         query.whereKey("date", .descending)
         
@@ -147,13 +161,15 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
                 self.news.removeAll()
                 
                 let firstDate = (objects[0].get("date")?.intValue)!
+
                 var dateString = String(firstDate)
                 var dayNum = Int(dateString[6...7])!
                 var dateFormatted = "\(dateString[0...3])-\(dateString[4...5])-\(dateString[6...7])"
                 var weekd = self.weekdayNames[self.getDayOfWeek(dateFormatted)!-1]
                 
                 
-                self.news.append(News(title: "", body: "sdfghjkdfghjkdfghjkdfghjksdfghjkdfghjkdfghjkdfghjk", day: dayNum, weekday: weekd, hasShadow: false))
+                self.news.append(News(title: "", author: "", body: "", day: dayNum, weekday: weekd, hasShadow: false, hasLink: false, webLink: ""))
+                //placeholder to have the date show
                 
                 for i in 0..<objects.count{
                     if i > 0 && objects[i].get("date")?.intValue != objects[i-1].get("date")?.intValue{
@@ -163,9 +179,16 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
                         dateFormatted = "\(dateString[0...3])-\(dateString[4...5])-\(dateString[6...7])"
                         weekd = self.weekdayNames[self.getDayOfWeek(dateFormatted)!-1]
                         
-                        self.news.append(News(title: "", body: "sdfghjkdfghjkdfghjkdfghjksdfghjkdfghjkdfghjkdfghjk", day: dayNum, weekday: weekd, hasShadow: false))
+                        self.news.append(News(title: "", author: "", body: "", day: dayNum, weekday: weekd, hasShadow: false, hasLink: false, webLink: ""))
                     }
-                    let new = News(title: (objects[i].get("title")?.stringValue)!, body: (objects[i].get("body")?.stringValue)!, day: 0, weekday: "", hasShadow: true)
+                    
+                    let new = News(title: (objects[i].get("Title")?.stringValue)!, author: (objects[i].get("Author")?.stringValue) ?? "", body: (objects[i].get("Description")?.stringValue) ?? "", day: 0, weekday: "", hasShadow: true, hasLink: true, webLink: (objects[i].get("url")?.stringValue) ?? "")
+                    
+                    // Author Bug - problem is NOT in this file
+                    
+                    // TODO: add the link here, also add an author text field //done
+                    // "NO LINK" = hide the button
+                    // TODO: Expand the height of the news field when click read more
                     self.news.append(new)
                 }
                 
@@ -178,6 +201,17 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
                 print(error)
             }
         }
+    }
+    
+    
+    @IBAction func readMoreButton(_ sender: UIButton) {
+        
+        if(sender.currentTitleColor != .gray) {
+            UIApplication.shared.open(URL(string: "https://www.baidu.com")! as URL, options: [:], completionHandler: nil)
+        } //access the actual url content
+        
+        // THIS NEEDS TO BE CHANGED TO A Safari view IN THE APP, rather than open the Safari app itself!!!
+    
     }
     
     // refresh when scrolled to the bottom
@@ -223,12 +257,24 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! NewsTableViewCell
         
         cell.titleLabel.text = news[indexPath.section].title
+        cell.authorLabel.text = news[indexPath.section].author
         cell.newsLabel.text = news[indexPath.section].body
         cell.dayLabel.text = convert(day: news[indexPath.section].day)
         cell.weekdayLabel.text = news[indexPath.section].weekday
         cell.newsBackgroundView.backgroundColor = .white
         cell.newsBackgroundView.isHidden = !news[indexPath.section].hasShadow
         cell.newsLabel.textColor = returnColor(hasShadow: news[indexPath.section].hasShadow)
+        
+        let link: String = news[indexPath.section].webLink
+        
+        if link == "" {
+            //hide the show more thing
+            cell.readMoreButton.setTitleColor(.gray, for: .normal)
+            //also need to disable the url
+        }
+        
+        //cell.newsImage.image = UIImage(named: news[indexPath.section].imageLink) //image path
+        //add image and link HERE (references)
         
         if indexPath.section == 0 && currentDate().1 == news[indexPath.section].day {
             cell.dayLabel.textColor = School.color[.TsinghuaInternationalSchool]

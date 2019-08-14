@@ -30,7 +30,7 @@ func indexOf(character: Character, text: String)->[Int]{
         if char == character{
             if (sum==0){
                 indexes.append(counter-sum)
-            }else{
+            } else {
                 indexes.append(counter-sum-1)
             }
             sum = counter
@@ -68,19 +68,19 @@ func indexBeforeWord(word: String, string: String)->Int{
                     prevIndex = i
                     counter = counter + 1
                     index = i
-                }else{
+                } else {
                     if i-1 == prevIndex{
                         prevIndex = i
                         counter = counter + 1
-                    }else{
+                    } else {
                         prevIndex = -1
                         counter = 0
                         index = -1
                     }
                 }
-            }else{
+            } else {
                 if counter == 0{
-                }else{
+                } else {
                     prevIndex = -1
                     counter = 0
                     index = -1
@@ -115,7 +115,7 @@ struct Schedule{
         if user.identity == .teacher{
             let classes = try! doc.getElementById("teacherSectionTable")
             elements = (try! classes?.select("tr").array())!
-        }else{
+        } else {
             let classes = try! doc.getElementsByClass("linkDescList grid")
             elements = try! classes.select("td").array()
         }
@@ -126,10 +126,10 @@ struct Schedule{
             if user.school.name == .TsinghuaInternationalSchool{
                 if user.identity == .student{
                     return (20,15)
-                }else{
+                } else {
                     return (10,1)
                 }
-            }else{
+            } else {
                 return (14,11)
             }
         }
@@ -154,7 +154,7 @@ struct Schedule{
             
             if user.school.name == .TsinghuaInternationalSchool{
                 if clas[0].prefix(2)=="HR" || clas[0].prefix(3)=="EHR"{
-                }else{
+                } else {
                     // put clas inside of courses array
                     
                     var time = clas[0]
@@ -198,10 +198,10 @@ struct Schedule{
                             }else if reachedParen==false{
                                 sum = sum + intValue(char: char)
                             }else if char == ")"{
-                            }else{
+                            } else {
                                 if char == "," {
                                     consecutiveClass = false
-                                }else{
+                                } else {
                                     for i in 0..<periods.count{
                                         nums.append(periods[i]+Int(String(char))!*100)
                                     }
@@ -235,7 +235,7 @@ struct Schedule{
                         room = String(clas[1][roomIndex...])
                         name = String(clas[1][0..<courseEndIndex])
                         teacher = String(clas[1][teacherStartIndex..<teacherEndIndex])
-                    }else{
+                    } else {
                         name = String(clas[1])
                     }
                     
@@ -251,7 +251,7 @@ struct Schedule{
                     
                 }
 
-            }else{
+            } else {
                 
                 
                 // ISB
@@ -268,15 +268,15 @@ struct Schedule{
                         if char != "(" && char != ")"{
                             if hasReachedParenthesis == false{
                                 period = period + String(char)
-                            }else{
+                            } else {
                                 if char != "-" && char != ","{
                                     days.append(String(char))
                                 }
                             }
-                        }else{
+                        } else {
                             if char == "("{
                                 hasReachedParenthesis = true
-                            }else{
+                            } else {
                                 hasExitParenthesis = true
                             }
                         }

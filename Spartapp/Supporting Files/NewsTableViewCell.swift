@@ -7,14 +7,21 @@
 //
 
 import UIKit
+import SafariServices
 
 class NewsTableViewCell: UITableViewCell {
 
     @IBOutlet weak var newsBackgroundView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var authorLabel: UILabel!
     @IBOutlet weak var newsLabel: UILabel!
     @IBOutlet weak var dayLabel: UILabel!
     @IBOutlet weak var weekdayLabel: UILabel!
+    @IBOutlet weak var newsImage: UIImageView!
+    
+    //if url is blank (""), hide the button
+    
+    @IBOutlet weak var readMoreButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
