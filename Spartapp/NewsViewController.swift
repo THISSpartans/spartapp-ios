@@ -268,8 +268,18 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
         
         cell.readMoreButton.setUrl(url: news[indexPath.section].webLink)
         
+        if news[indexPath.section].author == "" {
+            cell.authorLabel.isHidden = true
+        }
+        
+        if news[indexPath.section].body == "" {
+            cell.newsLabel.isHidden = true
+        }
+        
         if cell.readMoreButton.getUrl() == "" {
-            cell.readMoreButton.setTitleColor(.gray, for: .normal)
+            cell.readMoreButton.setTitleColor(.white, for: .normal)
+            cell.readMoreButton.isHidden = true
+            //cell.readMoreButton.frame.
         }
         
         //cell.newsImage.image = UIImage(named: news[indexPath.section].imageLink) //image path

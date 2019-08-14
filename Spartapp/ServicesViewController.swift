@@ -12,7 +12,7 @@ class ServicesViewController: UIViewController,UITableViewDelegate,UITableViewDa
     
     @IBOutlet weak var servicesTableView: UITableView!
     
-    let services:[(String,String)] = [("Speech Showcase Election 2019","election"),("StuCo 2018 Election","election")]
+    let services:[(String,String)] = [("StuCo 2018 Election","election")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
