@@ -59,6 +59,7 @@
 		C1FA828F21AE3AD0006DF469 /* WeekdayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FA828E21AE3AD0006DF469 /* WeekdayCollectionViewCell.swift */; };
 		C1FCB1BE2191259300C7EF92 /* Holiday.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B50E562067CD05001791A8 /* Holiday.swift */; };
 		C1FCB1BF2191259300C7EF92 /* Holiday.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B50E562067CD05001791A8 /* Holiday.swift */; };
+		DEC41E722303F3AC00D2B5B5 /* WebButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC41E712303F3AC00D2B5B5 /* WebButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -175,6 +176,7 @@
 		C1F9154E21AFF09500E4E4DE /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		C1F9155021AFF12B00E4E4DE /* NewsTableViewCellDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCellDesign.swift; sourceTree = "<group>"; };
 		C1FA828E21AE3AD0006DF469 /* WeekdayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayCollectionViewCell.swift; sourceTree = "<group>"; };
+		DEC41E712303F3AC00D2B5B5 /* WebButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +257,7 @@
 		C1340F302058189200B4C4E7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DEC41E712303F3AC00D2B5B5 /* WebButton.swift */,
 				C10B7994212571050063C175 /* School.swift */,
 				C147A0662191193500C9669F /* Intents.intentdefinition */,
 				C1D15287206A81F900A9336A /* Schedule.swift */,
@@ -696,6 +699,7 @@
 				C15167BE20A54FBE0008ED24 /* JiroTextField.swift in Sources */,
 				C141C97E20A41A010066E2F0 /* TextFieldEffects.swift in Sources */,
 				C1905C1F2147BF680006C17B /* ServicesViewController.swift in Sources */,
+				DEC41E722303F3AC00D2B5B5 /* WebButton.swift in Sources */,
 				C10B7995212571050063C175 /* School.swift in Sources */,
 				C1CFA6FF206A8BEF00187053 /* LoginViewController.swift in Sources */,
 			);

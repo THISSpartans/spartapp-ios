@@ -17,18 +17,16 @@ class News {
     var day: Int
     var weekday: String
     var hasShadow: Bool
-    var hasLink: Bool
     var webLink: String
     //var webLink: String
     
-    init (title: String, author: String, body: String, day: Int, weekday: String, hasShadow: Bool, hasLink: Bool, webLink: String){
+    init (title: String, author: String, body: String, day: Int, weekday: String, hasShadow: Bool, webLink: String){
         self.title = title
         self.author = author
         self.body = body
         self.day = day
         self.weekday = weekday
         self.hasShadow = hasShadow
-        self.hasLink = hasLink
         self.webLink = webLink
         
         //if no link enter ""
@@ -168,7 +166,7 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
                 var weekd = self.weekdayNames[self.getDayOfWeek(dateFormatted)!-1]
                 
                 
-                self.news.append(News(title: "", author: "", body: "", day: dayNum, weekday: weekd, hasShadow: false, hasLink: false, webLink: ""))
+                self.news.append(News(title: "", author: "", body: "", day: dayNum, weekday: weekd, hasShadow: false, webLink: ""))
                 //placeholder to have the date show
                 
                 for i in 0..<objects.count{
@@ -179,10 +177,10 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
                         dateFormatted = "\(dateString[0...3])-\(dateString[4...5])-\(dateString[6...7])"
                         weekd = self.weekdayNames[self.getDayOfWeek(dateFormatted)!-1]
                         
-                        self.news.append(News(title: "", author: "", body: "", day: dayNum, weekday: weekd, hasShadow: false, hasLink: false, webLink: ""))
+                        self.news.append(News(title: "", author: "", body: "", day: dayNum, weekday: weekd, hasShadow: false, webLink: ""))
                     }
                     
-                    let new = News(title: (objects[i].get("Title")?.stringValue)!, author: (objects[i].get("Author")?.stringValue) ?? "", body: (objects[i].get("Description")?.stringValue) ?? "", day: 0, weekday: "", hasShadow: true, hasLink: true, webLink: (objects[i].get("url")?.stringValue) ?? "")
+                    let new = News(title: (objects[i].get("Title")?.stringValue)!, author: (objects[i].get("Author")?.stringValue) ?? "", body: (objects[i].get("Description")?.stringValue) ?? "", day: 0, weekday: "", hasShadow: true, webLink: (objects[i].get("url")?.stringValue) ?? "")
                     
                     // Author Bug - problem is NOT in this file
                     
