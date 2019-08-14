@@ -76,7 +76,7 @@ class ServicesViewController: UIViewController,UITableViewDelegate,UITableViewDa
 
             if Int(now[0...1])! == 3 && Int(now[3...4])! == 29 && Int(now[11...12])! >= 11 && Int(now[11...12])! <= 15{
                 
-                if let decodedVotingStatus = defaults.object(forKey: "Vote") as? Data{
+                if /*let decodedVotingStatus =*/ ((defaults.object(forKey: "Vote") as? Data) != nil){
                     // has voted
                     
                     let alertController = UIAlertController(title: "Sorry", message: "You have already voted", preferredStyle: .alert)

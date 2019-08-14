@@ -40,7 +40,7 @@ class LoginViewController: UIViewController,WKNavigationDelegate{
         super.viewDidLoad()
         
         if let decodedUser = UserDefaults.standard.object(forKey: "User") as? Data{
-            user = NSKeyedUnarchiver.unarchiveObject(with: decodedUser) as! User
+            user = (NSKeyedUnarchiver.unarchiveObject(with: decodedUser) as! User)
         }
         
         user.identity = user.identity

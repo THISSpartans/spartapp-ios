@@ -9,6 +9,7 @@
 
 import UIKit
 import LeanCloud
+import AVOSCloud
 
 class News {
     var title: String
@@ -18,9 +19,9 @@ class News {
     var weekday: String
     var hasShadow: Bool
     var webLink: String
-    //var webLink: String
+    var photoUrl: String
     
-    init (title: String, author: String, body: String, day: Int, weekday: String, hasShadow: Bool, webLink: String){
+    init (title: String, author: String, body: String, day: Int, weekday: String, hasShadow: Bool, webLink: String, photoUrl: String) {
         self.title = title
         self.author = author
         self.body = body
@@ -28,6 +29,7 @@ class News {
         self.weekday = weekday
         self.hasShadow = hasShadow
         self.webLink = webLink
+        self.photoUrl = photoUrl
         
         //if no link enter ""
     }
@@ -131,11 +133,52 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
         newsTableView.rowHeight = UITableViewAutomaticDimension
     }
     
-    @objc func refresh(sender:AnyObject) {
+    @objc func refresh(sender: AnyObject) {
         // Code to refresh table view
         fetchNews(untilDate: dateBefore(days: 3))
         daysBefore = 0
     }
+    
+    func formatDate(dateString: String) -> String {
+        //let str: String = "\(date)"
+        
+        return "\(dateString[0...3])\(dateString[5...6])\(dateString[8...9])"
+    }
+    
+    func indexOf(source: String, substring: String) -> Int? { //somehow this works (thanks, stack overflow)
+        if source.count - substring.count <= 0 {
+            return -1
+        }
+        
+        let maxIndex = source.count - substring.count
+        for index in 0...maxIndex {
+            let cutString = source.index(source.startIndex, offsetBy: index)..<source.index(source.startIndex, offsetBy: index + substring.count)
+            
+            if source[cutString] == substring {
+                return index
+            }
+            
+        }
+        
+        return -1
+    }
+    
+    func getPngUrl(gs: String) -> String { //gs is the garbled json string
+        if(indexOf(source: gs, substring: "https://") == -1) {
+            return ""
+        }
+        
+        let IOHttp = gs.index(gs.startIndex, offsetBy: indexOf(source: gs, substring: "https://")!)
+        var IOPng = gs.index(gs.startIndex, offsetBy: 3 + indexOf(source: gs, substring: ".png")!)
+        
+        if indexOf(source: gs, substring: ".png") == -1 {
+            IOPng = gs.index(gs.startIndex, offsetBy: 3 + indexOf(source: gs, substring: ".jpg")!)
+        }
+        
+        return "\(gs[IOHttp...IOPng])"
+    } /**
+        !!! PHOTOS CAN ONLY BE IN PNG OR JPG UNTIL WE FIND A BETTER SOLUTION !!!
+        **/
     
     func fetchNews(untilDate date: String){
         
@@ -145,7 +188,7 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
         
         print("Limiting date is", limitingDate)
         
-        let query = LCQuery(className: "News_Complex")
+        let query = LCQuery(className: "News_Complex") // TODO change this to AVQuery
         
         query.whereKey("date", .greaterThanOrEqualTo(limitingDate))
         query.whereKey("date", .descending)
@@ -166,11 +209,9 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
                 var weekd = self.weekdayNames[self.getDayOfWeek(dateFormatted)!-1]
                 
                 
-                self.news.append(News(title: (objects[0].get("Title")?.stringValue)!, author: (objects[0].get("Author")?.stringValue) ?? "", body: (objects[0].get("Description")?.stringValue) ?? "", day: dayNum, weekday: weekd, hasShadow: true, webLink: (objects[0].get("url")?.stringValue) ?? ""))
+                self.news.append(News(title: "", author: "", body: "", day: dayNum, weekday: weekd, hasShadow: false, webLink: "", photoUrl: ""))
                 
-                //placeholder to have the date show
-                
-                for i in 1..<objects.count{
+                for i in 0..<objects.count{
                     if i > 0 && objects[i].get("date")?.intValue != objects[i-1].get("date")?.intValue{
                         
                         dateString = String(objects[i].get("date")!.intValue!)
@@ -178,18 +219,16 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
                         dateFormatted = "\(dateString[0...3])-\(dateString[4...5])-\(dateString[6...7])"
                         weekd = self.weekdayNames[self.getDayOfWeek(dateFormatted)!-1]
                         
-                        self.news.append(News(title: (objects[i].get("Title")?.stringValue)!, author: (objects[i].get("Author")?.stringValue) ?? "", body: (objects[i].get("Description")?.stringValue) ?? "", day: dayNum, weekday: weekd, hasShadow: true, webLink: (objects[i].get("url")?.stringValue) ?? ""))
+                        self.news.append(News(title: "", author: "", body: "", day: dayNum, weekday: weekd, hasShadow: false, webLink: "", photoUrl: ""))
                         
-                        continue
+                        //continue //remove if you want a blank cell and also change hasShadow to false
                     }
                     
-                    let new = News(title: (objects[i].get("Title")?.stringValue)!, author: (objects[i].get("Author")?.stringValue) ?? "", body: (objects[i].get("Description")?.stringValue) ?? "", day: 0, weekday: "", hasShadow: true, webLink: (objects[i].get("url")?.stringValue) ?? "")
+
+                    let new = News(title: (objects[i].get("Title")?.stringValue)!, author: (objects[i].get("Author")?.stringValue) ?? "", body: (objects[i].get("Description")?.stringValue) ?? "", day: 0, weekday: "", hasShadow: true, webLink: (objects[i].get("url")?.stringValue) ?? "", photoUrl: self.getPngUrl(gs: objects[i].get("Attached")?.jsonString ?? ""))
                     
-                    // Author Bug - problem is NOT in this file
+                    // figuring out the photo url took me a day until i realized the json was available in the class...
                     
-                    // TODO: add the link here, also add an author text field //done
-                    // "NO LINK" = hide the button
-                    // TODO: Expand the height of the news field when click read more
                     self.news.append(new)
                 }
                 
@@ -265,25 +304,23 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
         cell.newsBackgroundView.backgroundColor = .white
         cell.newsBackgroundView.isHidden = !news[indexPath.section].hasShadow
         cell.newsLabel.textColor = returnColor(hasShadow: news[indexPath.section].hasShadow)
+        cell.readMoreButton.setTitleColor(School.color[.TsinghuaInternationalSchool], for: .normal)
+        
+        // Thank you stack overflow!
+        let url = news[indexPath.section].photoUrl
+        
+        if url == "" {
+            cell.imageView?.isHidden = true
+        } else {
+            cell.imageView?.image = UIImage(data: try! Data(contentsOf: URL(string: url)!))
+        }
         
         cell.readMoreButton.setUrl(url: news[indexPath.section].webLink)
-        
-        if news[indexPath.section].author == "" {
-            cell.authorLabel.isHidden = true
-        }
-        
-        if news[indexPath.section].body == "" {
-            cell.newsLabel.isHidden = true
-        }
         
         if cell.readMoreButton.getUrl() == "" {
             cell.readMoreButton.setTitleColor(.white, for: .normal)
             cell.readMoreButton.isHidden = true
-            //cell.readMoreButton.frame.
         }
-        
-        //cell.newsImage.image = UIImage(named: news[indexPath.section].imageLink) //image path
-        //add image
         
         if indexPath.section == 0 && currentDate().1 == news[indexPath.section].day {
             cell.dayLabel.textColor = School.color[.TsinghuaInternationalSchool]
