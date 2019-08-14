@@ -21,7 +21,7 @@ class NewsTableViewCell: UITableViewCell {
     
     //if url is blank (""), hide the button
     
-    @IBOutlet weak var readMoreButton: UIButton!
+    @IBOutlet weak var readMoreButton: WebButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()

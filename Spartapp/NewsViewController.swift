@@ -166,10 +166,11 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
                 var weekd = self.weekdayNames[self.getDayOfWeek(dateFormatted)!-1]
                 
                 
-                self.news.append(News(title: "", author: "", body: "", day: dayNum, weekday: weekd, hasShadow: false, webLink: ""))
+                self.news.append(News(title: (objects[0].get("Title")?.stringValue)!, author: (objects[0].get("Author")?.stringValue) ?? "", body: (objects[0].get("Description")?.stringValue) ?? "", day: dayNum, weekday: weekd, hasShadow: true, webLink: (objects[0].get("url")?.stringValue) ?? ""))
+                
                 //placeholder to have the date show
                 
-                for i in 0..<objects.count{
+                for i in 1..<objects.count{
                     if i > 0 && objects[i].get("date")?.intValue != objects[i-1].get("date")?.intValue{
                         
                         dateString = String(objects[i].get("date")!.intValue!)
@@ -177,7 +178,9 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
                         dateFormatted = "\(dateString[0...3])-\(dateString[4...5])-\(dateString[6...7])"
                         weekd = self.weekdayNames[self.getDayOfWeek(dateFormatted)!-1]
                         
-                        self.news.append(News(title: "", author: "", body: "", day: dayNum, weekday: weekd, hasShadow: false, webLink: ""))
+                        self.news.append(News(title: (objects[i].get("Title")?.stringValue)!, author: (objects[i].get("Author")?.stringValue) ?? "", body: (objects[i].get("Description")?.stringValue) ?? "", day: dayNum, weekday: weekd, hasShadow: true, webLink: (objects[i].get("url")?.stringValue) ?? ""))
+                        
+                        continue
                     }
                     
                     let new = News(title: (objects[i].get("Title")?.stringValue)!, author: (objects[i].get("Author")?.stringValue) ?? "", body: (objects[i].get("Description")?.stringValue) ?? "", day: 0, weekday: "", hasShadow: true, webLink: (objects[i].get("url")?.stringValue) ?? "")
@@ -202,10 +205,10 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
     }
     
     
-    @IBAction func readMoreButton(_ sender: UIButton) {
+    @IBAction func readMoreButton(_ sender: WebButton) {
         
         if(sender.currentTitleColor != .gray) {
-            UIApplication.shared.open(URL(string: "https://www.baidu.com")! as URL, options: [:], completionHandler: nil)
+            UIApplication.shared.open(URL(string: sender.getUrl())! as URL, options: [:], completionHandler: nil)
         } //access the actual url content
         
         // THIS NEEDS TO BE CHANGED TO A Safari view IN THE APP, rather than open the Safari app itself!!!
@@ -263,16 +266,14 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
         cell.newsBackgroundView.isHidden = !news[indexPath.section].hasShadow
         cell.newsLabel.textColor = returnColor(hasShadow: news[indexPath.section].hasShadow)
         
-        let link: String = news[indexPath.section].webLink
+        cell.readMoreButton.setUrl(url: news[indexPath.section].webLink)
         
-        if link == "" {
-            //hide the show more thing
+        if cell.readMoreButton.getUrl() == "" {
             cell.readMoreButton.setTitleColor(.gray, for: .normal)
-            //also need to disable the url
         }
         
         //cell.newsImage.image = UIImage(named: news[indexPath.section].imageLink) //image path
-        //add image and link HERE (references)
+        //add image
         
         if indexPath.section == 0 && currentDate().1 == news[indexPath.section].day {
             cell.dayLabel.textColor = School.color[.TsinghuaInternationalSchool]

@@ -413,4 +413,3 @@ class LoginViewController: UIViewController,WKNavigationDelegate{
     
     
 }
-
