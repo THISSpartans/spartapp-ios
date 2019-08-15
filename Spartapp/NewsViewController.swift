@@ -5,7 +5,7 @@
 //  Created by 童开文 on 2018/11/29.
 //  Copyright © 2018 童开文. All rights reserved.
 //
-//  Updated by Andrew Li on 2019/08/13 for news with webview
+//  Updated by Andrew Li on 2019/08/13-15 for news with webview
 
 import UIKit
 import LeanCloud
@@ -32,8 +32,6 @@ class News {
         self.webLink = webLink
         self.photoUrl = photoUrl
         self.hasPhoto = hasPhoto
-        
-        //if no link enter ""
     }
     
     func getAuthor() -> String {
@@ -45,14 +43,10 @@ extension UIImageView { //loads an image from a url, change the Info.plist for h
     func loadUrl(url: URL) {
         DispatchQueue.global().async { [weak self] in
             if let data = try? Data(contentsOf: url) {
-                //print("line 15")
                 if let image = UIImage(data: data) {
-                    //print("line 17")
                     DispatchQueue.main.async {
-                        //print("line 19")
                         self?.image = image
                         self?.contentMode = UIView.ContentMode.scaleAspectFit
-                        //print("LOADED AN IMAGE FROM", url)
                     }
                 }
             }
@@ -98,27 +92,22 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
         
         let query = LCQuery(className: "NewsViews")
         
-        let date = currentDate()
+        //let date = currentDate()
+        let calendar = Calendar.current
         
-        var year: Int{
-            if date.0 < 8{
-                return 2019
-            }else{
-                return 2018
-            }
-        }
-        
-        
+        let date = Date()
+        let year: Int = calendar.component(.year, from: date)
+       
         var dateString = "\(year)"
-        if (date.0<10){
-            dateString += "0\(date.0)"
+        if (calendar.component(.month, from: date)<10){
+            dateString += "0\(calendar.component(.month, from: date))"
         }else{
-            dateString += "\(date.0)"
+            dateString += "\(calendar.component(.month, from: date))"
         }
-        if (date.1<10){
-            dateString += "0\(date.1)"
+        if (calendar.component(.day, from: date)<10){
+            dateString += "0\(calendar.component(.day, from: date))"
         }else{
-            dateString += "\(date.1)"
+            dateString += "\(calendar.component(.day, from: date))"
         }
         
         query.whereKey("date", .equalTo(dateString))
