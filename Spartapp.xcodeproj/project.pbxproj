@@ -59,6 +59,7 @@
 		C1FA828F21AE3AD0006DF469 /* WeekdayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FA828E21AE3AD0006DF469 /* WeekdayCollectionViewCell.swift */; };
 		C1FCB1BE2191259300C7EF92 /* Holiday.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B50E562067CD05001791A8 /* Holiday.swift */; };
 		C1FCB1BF2191259300C7EF92 /* Holiday.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B50E562067CD05001791A8 /* Holiday.swift */; };
+		DE333A07230529F500F2F6C8 /* WebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE333A06230529F500F2F6C8 /* WebImage.swift */; };
 		DEC41E722303F3AC00D2B5B5 /* WebButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC41E712303F3AC00D2B5B5 /* WebButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -176,6 +177,7 @@
 		C1F9154E21AFF09500E4E4DE /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		C1F9155021AFF12B00E4E4DE /* NewsTableViewCellDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCellDesign.swift; sourceTree = "<group>"; };
 		C1FA828E21AE3AD0006DF469 /* WeekdayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayCollectionViewCell.swift; sourceTree = "<group>"; };
+		DE333A06230529F500F2F6C8 /* WebImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImage.swift; sourceTree = "<group>"; };
 		DEC41E712303F3AC00D2B5B5 /* WebButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -258,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				DEC41E712303F3AC00D2B5B5 /* WebButton.swift */,
+				DE333A06230529F500F2F6C8 /* WebImage.swift */,
 				C10B7994212571050063C175 /* School.swift */,
 				C147A0662191193500C9669F /* Intents.intentdefinition */,
 				C1D15287206A81F900A9336A /* Schedule.swift */,
@@ -679,6 +682,7 @@
 			files = (
 				C1BB4ECF20CEA55300548FFC /* PageWTViewController.swift in Sources */,
 				C1630E4621AC00E900B07622 /* ClassTableViewCell.swift in Sources */,
+				DE333A07230529F500F2F6C8 /* WebImage.swift in Sources */,
 				C1905C212147C0550006C17B /* ServiceTableViewCell.swift in Sources */,
 				C1F9154D21AFF01200E4E4DE /* NewsTableViewCell.swift in Sources */,
 				C1961E82206A811200059901 /* Course.swift in Sources */,

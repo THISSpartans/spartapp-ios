@@ -17,7 +17,7 @@ class NewsTableViewCell: UITableViewCell {
     @IBOutlet weak var newsLabel: UILabel!
     @IBOutlet weak var dayLabel: UILabel!
     @IBOutlet weak var weekdayLabel: UILabel!
-    @IBOutlet weak var newsImage: UIImageView!
+    @IBOutlet weak var newsImage: WebImage!
     
     //if url is blank (""), hide the button
     
