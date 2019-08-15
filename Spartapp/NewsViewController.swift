@@ -7,13 +7,6 @@
 //
 //  Updated by Andrew Li on 2019/08/13 for news with webview
 
-/**
- This is a TODO LIST for the News view:
- - reduce white space where details were hidden because that looks super ugly
- - make the photos bigger
- - that's it?
- **/
-
 import UIKit
 import LeanCloud
 import AVOSCloud
