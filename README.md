@@ -15,6 +15,7 @@ aren't a student at THIS or ISB, the application is practically useless
 
 
 **Q: Why should I download it?**
+
 A: So you don't have to memorize your schedule or enter the wrong classroom or
 [insert a mistake here that you might make].
 
