@@ -1,4 +1,4 @@
-# spartapp-ios
+# Spartapp for iOS
 Spartapp iOS code
 
 **Q: What is Spartapp?**
