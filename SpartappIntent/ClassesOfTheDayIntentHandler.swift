@@ -29,8 +29,8 @@ class School: NSObject, NSCoding{
     var calendar: [[Bool]]? = nil
     
     // summer dates
-    static var summerStartDate:[SchoolName:(Int,Int)] = [.TsinghuaInternationalSchool:(6,21),.InternationalSchoolofBeijing:(6,21)]
-    static var summerEndDate:[SchoolName:(Int,Int)] = [.TsinghuaInternationalSchool:(8,27),.InternationalSchoolofBeijing:(8,12)]
+    static var summerStartDate:[SchoolName:(Int,Int)] = [.TsinghuaInternationalSchool:(6,20),.InternationalSchoolofBeijing:(6,21)]
+    static var summerEndDate:[SchoolName:(Int,Int)] = [.TsinghuaInternationalSchool:(8,26),.InternationalSchoolofBeijing:(8,12)]
     
     // scheduling
     static var numberOfPeriodPerDay:[SchoolName:Int] = [.TsinghuaInternationalSchool:4,.InternationalSchoolofBeijing:4]
@@ -290,9 +290,9 @@ class ClassesOfTheDayIntentHandler: NSObject, ClassesOfTheDayIntentHandling {
         
         var year: Int{
             if month>=8{
-                return 2018
-            }else{
                 return 2019
+            }else{
+                return 2020
             }
         }
         

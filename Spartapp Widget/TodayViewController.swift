@@ -152,9 +152,9 @@ class TodayViewController: UIViewController, NCWidgetProviding, UITableViewDeleg
         
         var year: Int{
             if date.0 >= 8 {
-                return 2018
-            }else{
                 return 2019
+            }else{
+                return 2020
             }
         }
         if today == -1 {
@@ -323,9 +323,9 @@ class TodayViewController: UIViewController, NCWidgetProviding, UITableViewDeleg
         
         var year: Int{
             if month>=8{
-                return 2018
-            }else{
                 return 2019
+            }else{
+                return 2020
             }
         }
         if user.school.isSchoolDay(month: month, day: day, year: year) == false || user.school.isSummer(month: month, day: day){

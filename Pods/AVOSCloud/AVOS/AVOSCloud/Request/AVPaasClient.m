@@ -647,7 +647,7 @@ NSString *const LCHeaderFieldNameProduction = @"X-LC-Prod";
             }
 
             NSInteger statusCode = HTTPResponse.statusCode;
-            NSTimeInterval costTime = -([operationEnqueueDate timeIntervalSinceNow] * 10000);
+            NSTimeInterval costTime = -([operationEnqueueDate timeIntervalSinceNow] * 1000);
 
             AVLoggerDebug(AVLoggerDomainNetwork, LC_REST_RESPONSE_LOG_FORMAT, path, costTime, responseObject);
 

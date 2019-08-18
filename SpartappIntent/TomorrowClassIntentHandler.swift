@@ -74,9 +74,9 @@ class TomorrowClassIntentHandler: NSObject, TomorrowClassIntentHandling {
         
         var year: Int{
             if month>=8{
-                return 2018
-            }else{
                 return 2019
+            }else{
+                return 2020
             }
         }
         

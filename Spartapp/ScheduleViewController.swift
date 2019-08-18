@@ -6,6 +6,8 @@
 //  Copyright © 2018年 童开文. All rights reserved.
 //
 
+// IF YOU ARE CHANGING THE YEAR, THERE ARE MULTIPLE INSTANCES OF 'let year: int' or whatever, CMD + F
+
 import UIKit
 import LeanCloud
 import Intents
@@ -231,9 +233,9 @@ class ScheduleViewController: UIViewController,UITableViewDelegate, UITableViewD
             
             var year: Int {
                 if month >= 8{
-                    return 2018
-                }else{
                     return 2019
+                }else{
+                    return 2020
                 }
             }
             
@@ -451,9 +453,9 @@ class ScheduleViewController: UIViewController,UITableViewDelegate, UITableViewD
             
             var year: Int {
                 if month >= 8{
-                    return 2018
-                }else{
                     return 2019
+                }else{
+                    return 2020
                 }
             }
             
@@ -513,9 +515,9 @@ class ScheduleViewController: UIViewController,UITableViewDelegate, UITableViewD
                 
                 var year: Int {
                     if month >= 8{
-                        return 2018
-                    }else{
                         return 2019
+                    }else{
+                        return 2020
                     }
                 }
                 
@@ -624,9 +626,9 @@ class ScheduleViewController: UIViewController,UITableViewDelegate, UITableViewD
         
         var year: Int{
             if month >= 8{
-                return 2018
-            }else{
                 return 2019
+            }else{
+                return 2020
             }
         }
         
@@ -673,9 +675,9 @@ class ScheduleViewController: UIViewController,UITableViewDelegate, UITableViewD
         
         var year: Int{
             if month >= 8{
-                return 2018
-            }else{
                 return 2019
+            }else{
+                return 2020
             }
         }
         
@@ -785,9 +787,9 @@ class ScheduleViewController: UIViewController,UITableViewDelegate, UITableViewD
             
             var year: Int {
                 if month >= 8{
-                    return 2018
-                }else{
                     return 2019
+                }else{
+                    return 2020
                 }
             }
             placeholder = getDayOfWeek("\(year)-\(month)-01")! - 1
@@ -816,9 +818,9 @@ class ScheduleViewController: UIViewController,UITableViewDelegate, UITableViewD
         
         var year: Int{
             if month>=8{
-                return 2018
-            }else{
                 return 2019
+            }else{
+                return 2020
             }
         }
         
