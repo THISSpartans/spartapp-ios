@@ -62,7 +62,7 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
     
     var daysBefore = 14 //loads news for 2 weeks, no more no less
     
-    var refreshControl = UIRefreshControl()
+    //var refreshControl = UIRefreshControl()
     
     var weekdayNames:[String] = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]
     
@@ -84,9 +84,9 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
         fetchNews(untilDate: dateBefore(days: daysBefore))
         
         
-        refreshControl.attributedTitle = NSAttributedString(string: "")
-        refreshControl.addTarget(self, action: #selector(self.refresh(sender:)), for: UIControl.Event.valueChanged)
-        newsTableView.addSubview(refreshControl)
+        //refreshControl.attributedTitle = NSAttributedString(string: "")
+        //refreshControl.addTarget(self, action: #selector(self.refresh(sender:)), for: UIControl.Event.valueChanged)
+        //newsTableView.addSubview(refreshControl)
         
         // add 1 to views
         
@@ -251,7 +251,7 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
                 
                 DispatchQueue.main.async {
                     self.newsTableView.reloadData()
-                    self.refreshControl.endRefreshing()
+                    //self.refreshControl.endRefreshing()
                 }
                 
             case .failure(let error):
