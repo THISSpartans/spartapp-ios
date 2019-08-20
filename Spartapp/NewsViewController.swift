@@ -5,7 +5,7 @@
 //  Created by 童开文 on 2018/11/29.
 //  Copyright © 2018 童开文. All rights reserved.
 //
-//  Updated by Andrew Li on 2019/08/13-15 for news with webview
+//  Updated by Andrew Li on 2019/08/13-15 for news with webview and image view
 
 import UIKit
 import LeanCloud
@@ -138,7 +138,7 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
     
     override func viewWillAppear(_ animated: Bool) {
         newsTableView.estimatedRowHeight = 115
-        newsTableView.rowHeight = UITableViewAutomaticDimension
+        newsTableView.rowHeight = UITableView.automaticDimension
     }
     
     @objc func refresh(sender: AnyObject) {
@@ -271,7 +271,7 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
     @IBAction func readMoreButton(_ sender: WebButton) {
         
         if(sender.currentTitleColor != .gray) {
-            UIApplication.shared.open(URL(string: sender.getUrl())! as URL, options: [:], completionHandler: nil)
+            UIApplication.shared.open(URL(string: sender.getUrl())! as URL, options: convertToUIApplicationOpenExternalURLOptionsKeyDictionary([:]), completionHandler: nil)
         } //access the actual url content
         
         // THIS NEEDS TO BE CHANGED TO A Safari view IN THE APP, rather than open the Safari app itself!!!
@@ -391,4 +391,9 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
         return (Int(now[0...1])!,Int(now[3...4])!)
     }
 
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToUIApplicationOpenExternalURLOptionsKeyDictionary(_ input: [String: Any]) -> [UIApplication.OpenExternalURLOptionsKey: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (UIApplication.OpenExternalURLOptionsKey(rawValue: key), value)})
 }

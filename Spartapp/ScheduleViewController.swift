@@ -1151,7 +1151,7 @@ class ScheduleViewController: UIViewController,UITableViewDelegate, UITableViewD
         navigationController?.navigationBar.barTintColor = .white
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.topItem?.title = monthNames[month-1]
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont(name: "SFUIDisplay-Bold", size: 22) ?? UIFont()]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "SFUIDisplay-Bold", size: 22) ?? UIFont()]
     }
     
     func holidayMode(){
