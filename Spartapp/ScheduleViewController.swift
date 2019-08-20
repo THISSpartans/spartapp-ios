@@ -147,7 +147,7 @@ class ScheduleViewController: UIViewController,UITableViewDelegate, UITableViewD
         // else, present walk through
         
         if let decodedUser = defaults.object(forKey: "User") as? Data{
-            user = NSKeyedUnarchiver.unarchiveObject(with: decodedUser) as! User
+            user = (NSKeyedUnarchiver.unarchiveObject(with: decodedUser) as! User)
             user.identity = user.identity
             if user.school.name == .InternationalSchoolofBeijing{
                 if (tabBarController?.viewControllers?.count)! > 2{
@@ -486,7 +486,7 @@ class ScheduleViewController: UIViewController,UITableViewDelegate, UITableViewD
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "weekdayCell", for: indexPath) as! WeekdayCollectionViewCell
             cell.dayLabel.text = weekdays[indexPath.row]
             return cell
-        }else{
+        } else {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! DateCollectionViewCell
             cell.backgroundColor = .clear
             cell.dateLabel.backgroundColor = .white
@@ -506,12 +506,12 @@ class ScheduleViewController: UIViewController,UITableViewDelegate, UITableViewD
                     cell.dateLabel.clipsToBounds = true
                 }
                 
-            }else{
+            } else {
                 
                 
                 cell.dateLabel.text = "\(indexPath.row + 1)"
                 cell.weekdayLabel.isHidden = false
-                print(cell.dateLabel.text)
+                print(cell.dateLabel.text!)
                 
                 var year: Int {
                     if month >= 8{
@@ -535,10 +535,10 @@ class ScheduleViewController: UIViewController,UITableViewDelegate, UITableViewD
                     cell.dateLabel.backgroundColor = School.color[user.school.name]
                     cell.dateLabel.layer.cornerRadius = cell.frame.width/2
                     cell.dateLabel.clipsToBounds = true
-                }else{
+                } else {
                     cell.backgroundColor = .white
                 }
-            }else{
+            } else {
                 if (Int(cell.dateLabel.text!)!-1) == selectedDate {
                     cell.dateLabel.backgroundColor = School.color[user.school.name]
                     cell.dateLabel.layer.cornerRadius = cell.frame.width/2
@@ -559,7 +559,7 @@ class ScheduleViewController: UIViewController,UITableViewDelegate, UITableViewD
         
         if indexPath.row >= placeholder || collectionView.frame.height < 100{
             if hasSelectedDate == false{
-                let cell = collectionView.cellForItem(at: indexPath)
+                _ = collectionView.cellForItem(at: indexPath)
             }else{
                 let cell = collectionView.cellForItem(at: indexPath) as! DateCollectionViewCell
                 cell.dateLabel.backgroundColor = School.color[user.school.name]
@@ -573,7 +573,7 @@ class ScheduleViewController: UIViewController,UITableViewDelegate, UITableViewD
             
             selectedDate = indexPath.row
             
-            print("weeeeeeeee \(selectedDate)")
+            print("weeeeeeeee \(String(describing: selectedDate))")
             
             if dayCollectionViewHeight.constant > 100{
                 self.today = self.returnToDay(month: month, day: (selectedDate+1)-placeholder)
@@ -727,7 +727,7 @@ class ScheduleViewController: UIViewController,UITableViewDelegate, UITableViewD
             fetchHolidays(withClass: holidayName) { (true) in
                 self.fetchCalendar(withClass: calendarName, completion: { (true) in
                     if let decodedUser = self.defaults.object(forKey: "User") as? Data{
-                        self.user = NSKeyedUnarchiver.unarchiveObject(with: decodedUser) as! User
+                        self.user = (NSKeyedUnarchiver.unarchiveObject(with: decodedUser) as! User)
                         self.user.identity = self.user.identity
                         print("Done")
                     }
@@ -797,9 +797,9 @@ class ScheduleViewController: UIViewController,UITableViewDelegate, UITableViewD
             
             dayCollectionView.reloadData()
             hasSelectedDate = false
-            print("weee \(selectedDate)")
+            print("weee \(String(describing: selectedDate))")
             selectedDate += placeholder
-            print("weeeee \(selectedDate)")
+            print("weeeee \(String(describing: selectedDate))")
             let indexPath = NSIndexPath(item: selectedDate, section: 0)
             collectionView(dayCollectionView, didSelectItemAt: indexPath as IndexPath)
             dayCollectionView.scrollToItem(at: indexPath as IndexPath, at: .centeredHorizontally, animated: true)
@@ -1176,7 +1176,7 @@ class ScheduleViewController: UIViewController,UITableViewDelegate, UITableViewD
         if fromWalkthrough == true{
             if user == nil{
                 if let decodedUser = defaults.object(forKey: "User") as? Data{
-                    user = NSKeyedUnarchiver.unarchiveObject(with: decodedUser) as! User
+                    user = (NSKeyedUnarchiver.unarchiveObject(with: decodedUser) as! User)
                     user.identity = user.identity
                     if user.school.name == .InternationalSchoolofBeijing{
                         tabBarController?.viewControllers?.removeLast()
@@ -1192,8 +1192,8 @@ class ScheduleViewController: UIViewController,UITableViewDelegate, UITableViewD
         switch shortcutIdentifier {
         case .updateSchedule:
             performSegue(withIdentifier: "updateSchedule", sender: nil)
-        default:
-            return false
+        //default:
+            //return false
         }
         return true
     }
