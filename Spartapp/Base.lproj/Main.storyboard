@@ -254,7 +254,7 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="88" id="816-K7-J5K" customClass="ClassTableViewCell" customModule="Spartapp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="88"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="816-K7-J5K" id="H2u-qO-uVd">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="816-K7-J5K" id="H2u-qO-uVd">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="87.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -287,9 +287,12 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VBa-t5-RJo">
-                                                    <rect key="frame" x="97" y="2" width="84" height="83.5"/>
+                                                    <rect key="frame" x="106" y="2" width="75" height="75"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="84" id="LuU-Dp-DDx"/>
+                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="75" id="3Ag-2D-AfF"/>
+                                                        <constraint firstAttribute="height" constant="75" id="5Nj-lV-sau"/>
+                                                        <constraint firstAttribute="width" secondItem="VBa-t5-RJo" secondAttribute="height" multiplier="1:1" id="Nbp-tM-8li"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="pka-1j-Tdh"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>

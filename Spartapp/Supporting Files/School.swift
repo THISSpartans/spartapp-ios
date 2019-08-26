@@ -88,7 +88,7 @@ class School: NSObject, NSCoding{
         "earthscience":["earthandspacescience", "earthscience6"],
         "piano": ["pianoi", "pianoii"],
         "studyhall": ["studyhall"],
-        "theater": ["advacting", "classicalacting", "theater6", "theater7", "theater8"],
+        "theater": ["advacting", "classicalacting", "theater6", "theater7", "theater8", "improvtheatre"],
         "genderstudies ": ["genderstudiesi"],
         "health": ["health7", "health8", "health9", "health10"],
         "fitness ": ["advfitness"],

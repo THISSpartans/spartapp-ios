@@ -125,7 +125,7 @@ struct Schedule{
         var nColumn:(Int,Int){
             if user.school.name == .TsinghuaInternationalSchool{
                 if user.identity == .student{
-                    return (20,15)
+                    return (21,15)
                 } else {
                     return (10,1)
                 }
