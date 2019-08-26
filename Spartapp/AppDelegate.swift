@@ -37,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
     /// Saved shortcut item used as a result of an app launch, used later when app is activated.
     var launchedShortcutItem: UIApplicationShortcutItem?
     
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         // applicationId 即 App Id，applicationKey 是 App Key
         LeanCloud.initialize(applicationID: "cRxhzMwEQJ07JfRuztRYFJ5n-gzGzoHsz", applicationKey: "kIvYOVL1hGnkS3n1kh76P8NC")
@@ -48,7 +48,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
         print("channels \(currentInstallation.channels)")
         
         // If a shortcut was launched, display its information and take the appropriate action
-        if let shortcutItem = launchOptions?[UIApplication.LaunchOptionsKey.shortcutItem] as?
+        if let shortcutItem = launchOptions?[UIApplicationLaunchOptionsKey.shortcutItem] as?
             UIApplicationShortcutItem {
             
             launchedShortcutItem = shortcutItem

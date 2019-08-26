@@ -54,8 +54,8 @@ class LoginViewController: UIViewController,WKNavigationDelegate{
         
         // set placeholder text
         
-        usernameTextField.attributedPlaceholder = NSAttributedString(string: "username",attributes:[NSAttributedString.Key.foregroundColor: UIColor.white])
-        passwordTextField.attributedPlaceholder = NSAttributedString(string: "password",attributes:[NSAttributedString.Key.foregroundColor: UIColor.white])
+        usernameTextField.attributedPlaceholder = NSAttributedString(string: "username",attributes:[NSAttributedStringKey.foregroundColor: UIColor.white])
+        passwordTextField.attributedPlaceholder = NSAttributedString(string: "password",attributes:[NSAttributedStringKey.foregroundColor: UIColor.white])
         
         // set up text fields
         usernameTextField.addTarget(self, action: #selector(self.editingChanged), for: .editingChanged)
