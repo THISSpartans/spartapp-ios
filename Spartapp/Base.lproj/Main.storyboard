@@ -287,9 +287,11 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VBa-t5-RJo">
-                                                    <rect key="frame" x="97" y="2" width="84" height="83.5"/>
+                                                    <rect key="frame" x="99" y="2" width="83.5" height="83.5"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="84" id="LuU-Dp-DDx"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="buF-by-Zhd"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="sUe-ik-h3i"/>
+                                                        <constraint firstAttribute="width" secondItem="VBa-t5-RJo" secondAttribute="height" multiplier="1:1" id="sg8-JB-bMQ"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
@@ -297,7 +299,7 @@
                                                 <constraint firstItem="VBa-t5-RJo" firstAttribute="top" secondItem="H2u-qO-uVd" secondAttribute="topMargin" constant="-9" id="0uC-UH-b7B"/>
                                                 <constraint firstItem="CEW-rW-n1F" firstAttribute="top" secondItem="Ese-ZW-k8M" secondAttribute="bottom" id="GGS-kQ-ddh"/>
                                                 <constraint firstItem="Ese-ZW-k8M" firstAttribute="trailing" secondItem="CEW-rW-n1F" secondAttribute="trailing" id="I7x-Rr-y9I"/>
-                                                <constraint firstItem="Ese-ZW-k8M" firstAttribute="leading" secondItem="VBa-t5-RJo" secondAttribute="trailing" constant="38" id="JCb-Mu-z0C"/>
+                                                <constraint firstItem="Ese-ZW-k8M" firstAttribute="leading" secondItem="VBa-t5-RJo" secondAttribute="trailing" constant="36.5" id="JCb-Mu-z0C"/>
                                                 <constraint firstItem="Ese-ZW-k8M" firstAttribute="leading" secondItem="upr-v4-An3" secondAttribute="leading" id="Neu-Qt-the"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Ese-ZW-k8M" secondAttribute="trailing" id="SVd-Vk-8Dh"/>
                                                 <constraint firstItem="Ese-ZW-k8M" firstAttribute="leading" secondItem="CEW-rW-n1F" secondAttribute="leading" id="WGy-aa-JwV"/>
@@ -305,7 +307,7 @@
                                                 <constraint firstItem="upr-v4-An3" firstAttribute="top" secondItem="H2u-qO-uVd" secondAttribute="topMargin" constant="-9" id="drv-7s-nsM"/>
                                                 <constraint firstItem="Ese-ZW-k8M" firstAttribute="top" secondItem="H2u-qO-uVd" secondAttribute="topMargin" constant="27" id="ggr-rl-6hU"/>
                                                 <constraint firstItem="Ese-ZW-k8M" firstAttribute="trailing" secondItem="upr-v4-An3" secondAttribute="trailing" id="hHt-cg-wGW"/>
-                                                <constraint firstItem="VBa-t5-RJo" firstAttribute="leading" secondItem="97S-yN-rQs" secondAttribute="trailing" constant="19" id="kmg-WN-vLQ"/>
+                                                <constraint firstItem="VBa-t5-RJo" firstAttribute="leading" secondItem="97S-yN-rQs" secondAttribute="trailing" constant="21" id="kmg-WN-vLQ"/>
                                                 <constraint firstItem="CEW-rW-n1F" firstAttribute="top" secondItem="upr-v4-An3" secondAttribute="bottom" constant="20" id="pT7-K2-VLt"/>
                                                 <constraint firstItem="VBa-t5-RJo" firstAttribute="centerY" secondItem="97S-yN-rQs" secondAttribute="centerY" constant="1" id="xy8-Wt-CcY"/>
                                             </constraints>

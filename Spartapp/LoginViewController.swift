@@ -184,8 +184,11 @@ class LoginViewController: UIViewController,WKNavigationDelegate{
                     
                     if self.user.school.name == .TsinghuaInternationalSchool{
                         for course in schedule.courses{
-                            print(course.day.days[0])
-                            self.studentSchedule[Int(course.day.days[0])!-1][(Int(course.day.period)!*2 - abs(course.day.part-1))-1] = course
+                            print(course.name)
+                            print(course.day.days)
+                            print("AAAAAAAAAAAAAAAAAAAAAAAAAAA \(course.day.period)")
+                            print("\((Int(course.day.period)!*2)) \(abs(course.day.part-1))")
+                            self.studentSchedule[Int(course.day.days[0])!-1][(Int(course.day.period)!*2-abs(course.day.part-1))-1] = course
                         }
                     }else{
                         for cla in schedule.courses{
