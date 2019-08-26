@@ -102,7 +102,7 @@ struct Schedule{
     init(_ innerHTML: Any?) throws {
         
         if let decodedUser = UserDefaults.standard.object(forKey: "User") as? Data{
-            user = (NSKeyedUnarchiver.unarchiveObject(with: decodedUser) as! User)
+            user = NSKeyedUnarchiver.unarchiveObject(with: decodedUser) as! User
         }
         
         guard let htmlString = innerHTML as? String else {throw HTMLError.badInnerHTML}

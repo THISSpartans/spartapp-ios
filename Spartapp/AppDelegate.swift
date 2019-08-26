@@ -45,7 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
         self.registerForRemoteNotification()
         
         let currentInstallation = AVInstallation.current()
-        print("channels \(String(describing: currentInstallation.channels))")
+        print("channels \(currentInstallation.channels)")
         
         // If a shortcut was launched, display its information and take the appropriate action
         if let shortcutItem = launchOptions?[UIApplication.LaunchOptionsKey.shortcutItem] as?
