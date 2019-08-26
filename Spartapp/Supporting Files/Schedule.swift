@@ -125,7 +125,7 @@ struct Schedule{
         var nColumn:(Int,Int){
             if user.school.name == .TsinghuaInternationalSchool{
                 if user.identity == .student{
-                    return (21,15)
+                    return (20,15)
                 } else {
                     return (10,1)
                 }
@@ -142,7 +142,7 @@ struct Schedule{
                 if j==0 || j==nColumn.1{
                     let colContent = try! elements[(i*nColumn.0)+j].text()
                     rowContent.append(colContent)
-                    print("WOW \(rowContent) \(colContent)")
+                    print("WOEWWWWWW")
                 }
             }
             tableContent.append(rowContent)
@@ -227,24 +227,14 @@ struct Schedule{
                     var teacher = ""
                     
                     if user.identity == .student{
-                        print(clas[1])
-                        
                         let roomIndex = indexBeforeWord(word: "Rm:", string: clas[1])+4
                         let courseEndIndex = indexBeforeWord(word: "Details", string: clas[1])
                         let teacherStartIndex = indexBeforeWord(word: "Details", string: clas[1])+14
                         let teacherEndIndex = indexBeforeWord(word: "Email", string: clas[1])-1
                         
-                        if clas[1].count <= 10 {
-                            room = "NaN"
-                            name = "Whitney's Gym"
-                            teacher = "Miltank"
-                        } else {
-                            room = String(clas[1][clas[1].index(clas[1].startIndex, offsetBy: roomIndex)..<clas[1].endIndex])
-                            name = String(clas[1][0..<courseEndIndex])
-                            teacher = String(clas[1][teacherStartIndex..<teacherEndIndex])
-                        }
-                        
-                        print("\n \(room) \(name) \(teacher) \n")
+                        room = String(clas[1][roomIndex...])
+                        name = String(clas[1][0..<courseEndIndex])
+                        teacher = String(clas[1][teacherStartIndex..<teacherEndIndex])
                     } else {
                         name = String(clas[1])
                     }
