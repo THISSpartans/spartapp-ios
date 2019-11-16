@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B94E493024AD360D25329CC /* Pods_Spartapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6401C11F245449C7E469983 /* Pods_Spartapp.framework */; };
 		C10B7995212571050063C175 /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10B7994212571050063C175 /* School.swift */; };
 		C1340F1F20580F8100B4C4E7 /* SF-UI-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1340F1220580F7E00B4C4E7 /* SF-UI-Display-Semibold.otf */; };
 		C1340F2120580F8100B4C4E7 /* SF-UI-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1340F1420580F7E00B4C4E7 /* SF-UI-Display-Regular.otf */; };
@@ -23,8 +24,6 @@
 		C147A077219119C600C9669F /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C147A076219119C600C9669F /* IntentsUI.framework */; };
 		C147A07A219119C600C9669F /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C147A079219119C600C9669F /* IntentViewController.swift */; };
 		C147A07D219119C600C9669F /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C147A07B219119C600C9669F /* MainInterface.storyboard */; };
-		C147A081219119C600C9669F /* SpartappIntentUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C147A075219119C600C9669F /* SpartappIntentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		C147A084219119C600C9669F /* SpartappIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C147A06C219119C600C9669F /* SpartappIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C147A08D21911A5800C9669F /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C147A0662191193500C9669F /* Intents.intentdefinition */; };
 		C147A08E21911A5900C9669F /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C147A0662191193500C9669F /* Intents.intentdefinition */; };
 		C147A09021911D0100C9669F /* ClassesOfTheDayIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C147A08F21911D0100C9669F /* ClassesOfTheDayIntentHandler.swift */; };
@@ -60,24 +59,9 @@
 		C1FCB1BF2191259300C7EF92 /* Holiday.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B50E562067CD05001791A8 /* Holiday.swift */; };
 		DE333A07230529F500F2F6C8 /* WebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE333A06230529F500F2F6C8 /* WebImage.swift */; };
 		DEC41E722303F3AC00D2B5B5 /* WebButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC41E712303F3AC00D2B5B5 /* WebButton.swift */; };
-		F3CAB8F88E112B61B48E88DF /* Pods_Spartapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E16D178D7FDE113BC42AC03 /* Pods_Spartapp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C147A07F219119C600C9669F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C1E03627205627B400CAF9C8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C147A074219119C600C9669F;
-			remoteInfo = SpartappIntentUI;
-		};
-		C147A082219119C600C9669F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C1E03627205627B400CAF9C8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C147A06B219119C600C9669F;
-			remoteInfo = SpartappIntent;
-		};
 		C1E03644205627B400CAF9C8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C1E03627205627B400CAF9C8 /* Project object */;
@@ -94,25 +78,9 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		C15FC60520707FAB0061A78D /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				C147A081219119C600C9669F /* SpartappIntentUI.appex in Embed App Extensions */,
-				C147A084219119C600C9669F /* SpartappIntent.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		1C6E1D01C76D0BC3C8D763B7 /* Pods-Spartapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spartapp.release.xcconfig"; path = "Target Support Files/Pods-Spartapp/Pods-Spartapp.release.xcconfig"; sourceTree = "<group>"; };
-		4814C9F99D6497DC80B72140 /* Pods-Spartapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spartapp.debug.xcconfig"; path = "Target Support Files/Pods-Spartapp/Pods-Spartapp.debug.xcconfig"; sourceTree = "<group>"; };
-		9E16D178D7FDE113BC42AC03 /* Pods_Spartapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spartapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21DFCAA417715DFFCC317288 /* Pods-Spartapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spartapp.release.xcconfig"; path = "Target Support Files/Pods-Spartapp/Pods-Spartapp.release.xcconfig"; sourceTree = "<group>"; };
+		9291F2D380BEB77B675E8B88 /* Pods-Spartapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spartapp.debug.xcconfig"; path = "Target Support Files/Pods-Spartapp/Pods-Spartapp.debug.xcconfig"; sourceTree = "<group>"; };
 		C10B7994212571050063C175 /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
 		C11B564020D0FCDE004FAADD /* ClassTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassTableViewCell.swift; sourceTree = "<group>"; };
 		C1310615218C428C00889423 /* Spartapp-BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Spartapp-BridgingHeader.h"; sourceTree = "<group>"; };
@@ -179,6 +147,7 @@
 		C1FA828E21AE3AD0006DF469 /* WeekdayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayCollectionViewCell.swift; sourceTree = "<group>"; };
 		DE333A06230529F500F2F6C8 /* WebImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImage.swift; sourceTree = "<group>"; };
 		DEC41E712303F3AC00D2B5B5 /* WebButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebButton.swift; sourceTree = "<group>"; };
+		E6401C11F245449C7E469983 /* Pods_Spartapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spartapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,7 +170,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3CAB8F88E112B61B48E88DF /* Pods_Spartapp.framework in Frameworks */,
+				9B94E493024AD360D25329CC /* Pods_Spartapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,7 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				C147A076219119C600C9669F /* IntentsUI.framework */,
-				9E16D178D7FDE113BC42AC03 /* Pods_Spartapp.framework */,
+				E6401C11F245449C7E469983 /* Pods_Spartapp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -371,8 +340,8 @@
 		C79C312AADE58A802D159F0F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4814C9F99D6497DC80B72140 /* Pods-Spartapp.debug.xcconfig */,
-				1C6E1D01C76D0BC3C8D763B7 /* Pods-Spartapp.release.xcconfig */,
+				9291F2D380BEB77B675E8B88 /* Pods-Spartapp.debug.xcconfig */,
+				21DFCAA417715DFFCC317288 /* Pods-Spartapp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -418,18 +387,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C1E03657205627B400CAF9C8 /* Build configuration list for PBXNativeTarget "Spartapp" */;
 			buildPhases = (
-				C5A42CD69CB962B6342AD929 /* [CP] Check Pods Manifest.lock */,
+				9A5DBBC1DC8BB897D8CADBBA /* [CP] Check Pods Manifest.lock */,
 				C1E0362B205627B400CAF9C8 /* Sources */,
 				C1E0362C205627B400CAF9C8 /* Frameworks */,
 				C1E0362D205627B400CAF9C8 /* Resources */,
-				C15FC60520707FAB0061A78D /* Embed App Extensions */,
-				0F4B27EB6B62ECC17E0B79D3 /* [CP] Embed Pods Frameworks */,
+				034CA67E9432EE2792C9F770 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C147A080219119C600C9669F /* PBXTargetDependency */,
-				C147A083219119C600C9669F /* PBXTargetDependency */,
 			);
 			name = Spartapp;
 			productName = Spartapp;
@@ -514,7 +480,7 @@
 								enabled = 1;
 							};
 							com.apple.Siri = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -604,7 +570,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0F4B27EB6B62ECC17E0B79D3 /* [CP] Embed Pods Frameworks */ = {
+		034CA67E9432EE2792C9F770 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -632,7 +598,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Spartapp/Pods-Spartapp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C5A42CD69CB962B6342AD929 /* [CP] Check Pods Manifest.lock */ = {
+		9A5DBBC1DC8BB897D8CADBBA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -732,16 +698,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C147A080219119C600C9669F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C147A074219119C600C9669F /* SpartappIntentUI */;
-			targetProxy = C147A07F219119C600C9669F /* PBXContainerItemProxy */;
-		};
-		C147A083219119C600C9669F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C147A06B219119C600C9669F /* SpartappIntent */;
-			targetProxy = C147A082219119C600C9669F /* PBXContainerItemProxy */;
-		};
 		C1E03645205627B400CAF9C8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C1E0362E205627B400CAF9C8 /* Spartapp */;
@@ -995,14 +951,13 @@
 		};
 		C1E03658205627B400CAF9C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4814C9F99D6497DC80B72140 /* Pods-Spartapp.debug.xcconfig */;
+			baseConfigurationReference = 9291F2D380BEB77B675E8B88 /* Pods-Spartapp.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Spartapp/Spartapp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Q627YG3TKY;
+				DEVELOPMENT_TEAM = RN49F5VU72;
 				INFOPLIST_FILE = Spartapp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1010,7 +965,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Spartapp/WeChatSDK1.8.3",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kevintong.Spartapp;
+				PRODUCT_BUNDLE_IDENTIFIER = org.spartapp.Spartapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/andrew-li/Documents/iOS Development/Spartapp/Spartapp/Spartapp-BridgingHeader.h";
 				SWIFT_VERSION = 4.0;
@@ -1020,14 +975,13 @@
 		};
 		C1E03659205627B400CAF9C8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C6E1D01C76D0BC3C8D763B7 /* Pods-Spartapp.release.xcconfig */;
+			baseConfigurationReference = 21DFCAA417715DFFCC317288 /* Pods-Spartapp.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Spartapp/Spartapp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Q627YG3TKY;
+				DEVELOPMENT_TEAM = RN49F5VU72;
 				INFOPLIST_FILE = Spartapp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1035,7 +989,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Spartapp/WeChatSDK1.8.3",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.kevintong.Spartapp;
+				PRODUCT_BUNDLE_IDENTIFIER = org.spartapp.Spartapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/andrew-li/Documents/iOS Development/Spartapp/Spartapp/Spartapp-BridgingHeader.h";
 				SWIFT_VERSION = 4.0;

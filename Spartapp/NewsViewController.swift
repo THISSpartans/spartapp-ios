@@ -215,7 +215,7 @@ class NewsViewController: UIViewController,UITableViewDataSource,UITableViewDele
                 
                 self.news.removeAll()
                 
-                let firstDate = (objects[0].get("date")?.intValue)!
+                let firstDate = (objects[0].get("date")?.intValue)! //if the news is empty this WILL crash!!!
 
                 var dateString = String(firstDate)
                 var dayNum = Int(dateString[6...7])!
