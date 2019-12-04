@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9B94E493024AD360D25329CC /* Pods_Spartapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6401C11F245449C7E469983 /* Pods_Spartapp.framework */; };
+		27FEF94AD1473D90122B9EAB /* Pods_Spartapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B4B5CF501449A551538F263 /* Pods_Spartapp.framework */; };
 		C10B7995212571050063C175 /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10B7994212571050063C175 /* School.swift */; };
 		C1340F1F20580F8100B4C4E7 /* SF-UI-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1340F1220580F7E00B4C4E7 /* SF-UI-Display-Semibold.otf */; };
 		C1340F2120580F8100B4C4E7 /* SF-UI-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C1340F1420580F7E00B4C4E7 /* SF-UI-Display-Regular.otf */; };
@@ -79,8 +79,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		21DFCAA417715DFFCC317288 /* Pods-Spartapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spartapp.release.xcconfig"; path = "Target Support Files/Pods-Spartapp/Pods-Spartapp.release.xcconfig"; sourceTree = "<group>"; };
-		9291F2D380BEB77B675E8B88 /* Pods-Spartapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spartapp.debug.xcconfig"; path = "Target Support Files/Pods-Spartapp/Pods-Spartapp.debug.xcconfig"; sourceTree = "<group>"; };
+		0C68A8F26F58A09093015CBE /* Pods-Spartapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spartapp.release.xcconfig"; path = "Target Support Files/Pods-Spartapp/Pods-Spartapp.release.xcconfig"; sourceTree = "<group>"; };
+		1B4B5CF501449A551538F263 /* Pods_Spartapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spartapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		886ABD47B9B79CAB1EF270B9 /* Pods-Spartapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spartapp.debug.xcconfig"; path = "Target Support Files/Pods-Spartapp/Pods-Spartapp.debug.xcconfig"; sourceTree = "<group>"; };
 		C10B7994212571050063C175 /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
 		C11B564020D0FCDE004FAADD /* ClassTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassTableViewCell.swift; sourceTree = "<group>"; };
 		C1310615218C428C00889423 /* Spartapp-BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Spartapp-BridgingHeader.h"; sourceTree = "<group>"; };
@@ -147,7 +148,6 @@
 		C1FA828E21AE3AD0006DF469 /* WeekdayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayCollectionViewCell.swift; sourceTree = "<group>"; };
 		DE333A06230529F500F2F6C8 /* WebImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImage.swift; sourceTree = "<group>"; };
 		DEC41E712303F3AC00D2B5B5 /* WebButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebButton.swift; sourceTree = "<group>"; };
-		E6401C11F245449C7E469983 /* Pods_Spartapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spartapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,7 +170,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B94E493024AD360D25329CC /* Pods_Spartapp.framework in Frameworks */,
+				27FEF94AD1473D90122B9EAB /* Pods_Spartapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				C147A076219119C600C9669F /* IntentsUI.framework */,
-				E6401C11F245449C7E469983 /* Pods_Spartapp.framework */,
+				1B4B5CF501449A551538F263 /* Pods_Spartapp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -340,8 +340,8 @@
 		C79C312AADE58A802D159F0F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9291F2D380BEB77B675E8B88 /* Pods-Spartapp.debug.xcconfig */,
-				21DFCAA417715DFFCC317288 /* Pods-Spartapp.release.xcconfig */,
+				886ABD47B9B79CAB1EF270B9 /* Pods-Spartapp.debug.xcconfig */,
+				0C68A8F26F58A09093015CBE /* Pods-Spartapp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -387,11 +387,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C1E03657205627B400CAF9C8 /* Build configuration list for PBXNativeTarget "Spartapp" */;
 			buildPhases = (
-				9A5DBBC1DC8BB897D8CADBBA /* [CP] Check Pods Manifest.lock */,
+				7CBC22690B086EDABC712F8E /* [CP] Check Pods Manifest.lock */,
 				C1E0362B205627B400CAF9C8 /* Sources */,
 				C1E0362C205627B400CAF9C8 /* Frameworks */,
 				C1E0362D205627B400CAF9C8 /* Resources */,
-				034CA67E9432EE2792C9F770 /* [CP] Embed Pods Frameworks */,
+				6B116C691A0EE25DCA0E5531 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -570,7 +570,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		034CA67E9432EE2792C9F770 /* [CP] Embed Pods Frameworks */ = {
+		6B116C691A0EE25DCA0E5531 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -598,7 +598,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Spartapp/Pods-Spartapp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9A5DBBC1DC8BB897D8CADBBA /* [CP] Check Pods Manifest.lock */ = {
+		7CBC22690B086EDABC712F8E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -951,9 +951,10 @@
 		};
 		C1E03658205627B400CAF9C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9291F2D380BEB77B675E8B88 /* Pods-Spartapp.debug.xcconfig */;
+			baseConfigurationReference = 886ABD47B9B79CAB1EF270B9 /* Pods-Spartapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = Spartapp/Spartapp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -965,7 +966,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Spartapp/WeChatSDK1.8.3",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.spartapp.Spartapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevintong.Spartapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/andrew-li/Documents/iOS Development/Spartapp/Spartapp/Spartapp-BridgingHeader.h";
 				SWIFT_VERSION = 4.0;
@@ -975,9 +976,10 @@
 		};
 		C1E03659205627B400CAF9C8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21DFCAA417715DFFCC317288 /* Pods-Spartapp.release.xcconfig */;
+			baseConfigurationReference = 0C68A8F26F58A09093015CBE /* Pods-Spartapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = Spartapp/Spartapp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -989,7 +991,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Spartapp/WeChatSDK1.8.3",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.spartapp.Spartapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevintong.Spartapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/andrew-li/Documents/iOS Development/Spartapp/Spartapp/Spartapp-BridgingHeader.h";
 				SWIFT_VERSION = 4.0;

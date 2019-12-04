@@ -125,7 +125,7 @@ struct Schedule{
         var nColumn:(Int,Int){
             if user.school.name == .TsinghuaInternationalSchool{
                 if user.identity == .student{
-                    return (20,15) //20 is number of columns!
+                    return (18,15)
                 } else {
                     return (10,1)
                 }
@@ -142,7 +142,7 @@ struct Schedule{
                 if j==0 || j==nColumn.1{
                     let colContent = try! elements[(i*nColumn.0)+j].text()
                     rowContent.append(colContent)
-                    print("WOEWWWWWW")
+                    print("Schedule.swift - 154")
                 }
             }
             tableContent.append(rowContent)

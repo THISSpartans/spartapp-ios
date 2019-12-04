@@ -69,13 +69,13 @@ class School: NSObject, NSCoding{
         "biology": ["biology"],
         "chinese": ["apchinese", "chinese6a", "chinese6b", "chinese7a", "chinese7b", "chinese8a", "chinese8b", "chinese9a", "chinese9b", "chinese10a", "chinese10b", "chinese11a", "chinese11b", "chinese12a", "chinese12b"],
         "choir": ["choir"],
-        "computer": ["apcomputersciencea", "desktoppublishing", "digitalphotography", "digitalvideo", "grade6computerfoundations", "grade7computerfoundations", "grade8computerfoundations", "introtocomputerscience", "mobileappdesign", "robotici", "roboticii", "webdesign"],
+        "computer": ["apcomputersciencea", "apcomputerscienceprinciples", "desktoppublishing", "digitalphotography", "digitalvideo", "grade6computerfoundations", "grade7computerfoundations", "grade8computerfoundations", "introtocomputerscience", "mobileappdesign", "robotici", "roboticii", "webdesign"],
         "filmstudies": ["filmstudyi", "filmstudyii"],
         "french": ["frenchlangi", "frenchlangii", "frenchlangiii", "frenchlangiv"],
         "highschoolenrichment": ["highschoolenrichment"],
-        "linguistics": ["linguistics"],
+        "linguistics": ["linguistics", "bilingualtranslation"],
         "music": ["advband8", "band", "beginninginstrumentalmusic", "instrumentalmusicband6", "instrumentalmusicband7", "vocalmusic6", "vocalmusic7"],
-        "spanish": ["spanishi", "spanishii", "spanishiii", "spanishiv", "bilingualtranslation"],
+        "spanish": ["spanishi", "spanishii", "spanishiii", "spanishiv"],
         "steam": ["steam", "steami", "steamii", "steamiii", "steamday"],
         "calculus": ["apcalculusab", "apcalculusbc", "calculus", "precalculus", "apstatistics"],
         "math":["advalgebraii", "advgeometry", "algebrai", "algebraii", "algebraiii", "algebraii/trignometry","appliedmath", "geometry", "introtolinearalgebra", "math6", "math7"],
@@ -92,7 +92,7 @@ class School: NSObject, NSCoding{
         "genderstudies ": ["genderstudiesi"],
         "health": ["health7", "health8", "health9", "health10"],
         "fitness ": ["advfitness"],
-        "sport": ["outdooreducation", "pe6", "pe7", "pe8", "pe9", "sportsmanagement", "strengthtraining", "ultimatesports"],
+        "sport": ["outdooreducation", "pe6", "pe7", "pe8", "pe9", "sportsmanagement", "strengthtraining", "ultimatesports", "martialarts"],
         "-":["-"]
     ]
     
